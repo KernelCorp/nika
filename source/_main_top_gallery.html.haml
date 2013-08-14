@@ -29,14 +29,6 @@
 							Партнерская программа
 
 
-
-	:javascript{ :type => 'text/javascript'}
-		$(document).ready(function(){
-			$('#bx-top-gallery').bxSlider({
-			controls: true
-			});
-		});
-
 	.slideup_info
 		.elem
 			%img{ :src => 'images/delivery.jpg'}
@@ -73,3 +65,10 @@
 			%p
 				У нас есть служба доставки и поэтому мы поставляем быстро!
 
+:javascript
+	$(document).ready(function(){
+		$('#bx-top-gallery').bxSlider({
+		controls: true,
+		captions: false
+		});
+	});
