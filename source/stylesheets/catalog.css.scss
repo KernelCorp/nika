@@ -1,0 +1,83 @@
+$color-blue: #0083df;
+$color-pink: #d400b6;
+$color-grey: #c8c8c8;
+$color-black: #000;
+$color-white: #fff;
+$color-dark-blue: #2e3d66;
+
+.right-container {
+	font-family: Sans, Arial;
+	> h2 {
+		font-size: 23px;
+		color: $color-pink;
+	}
+	a {
+		color: $color-blue;
+		text-decoration: none;
+		&:hover {
+			color: $color-pink;
+			text-decoration: underline;
+		}
+		&.cubes, &.list {
+			width: 20px;
+			height: 20px;
+		}
+		&.active {
+			color: $color-grey;
+		}
+		&.cubes:after {
+			background-image: url('http://placekitten.com/20/20');
+		}
+		&.list:after {
+			background-iamge: url('http://placekitten.com/20/20');
+		}
+	}
+	> .products {
+		> .product {
+			h2 {
+				font-size: 20px;
+				color: $color-black;
+			}
+			> p {
+				color: $color-pink;
+			}
+			.image {
+				position: relative;
+				width: 230px;
+				height: 165px;
+				&:first-child {
+					position: absolute;
+					height: 165px;
+					width: 30px;
+					left: 1px;
+				}
+			}
+			.spanner {
+				* {
+					display: inline-block;
+					color: $color-dark-blue;
+					text-transform: italic;
+					font-size: 20px;
+				}
+				.buy-button {
+					text-transform: uppercase;
+					color: $color-white;
+					background-image: url('buy-button.png');
+					padding: 10px 13px;
+				}
+			}
+		}
+		> .paginator-wrapper {
+			width: 100%;
+			.paginator {
+				list-style: none;
+				display: block;
+				margin: 0 auto;
+				li {
+					display: inline;
+				}
+			}
+		}
+	}
+}
+
