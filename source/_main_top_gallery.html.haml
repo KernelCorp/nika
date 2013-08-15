@@ -31,44 +31,46 @@
 
 	.slideup_info
 		.elem
-			%img{ :src => 'images/delivery.jpg'}
+			%img{ :src => 'images/delivery.jpg', :class => 'img_before'}
+			%h3
+				Низкие цены
+			%p
+				У нас есть служба доставки и поэтому мы поставляем быстро!
+
+		.elem
+			%img{ :src => 'images/delivery.jpg', :class => 'img_before'}
+			%h3
+				Складская программа
+			%p
+				У нас есть служба доставки и поэтому мы поставляем быстро!
+
+		.elem
+			%img{ :src => 'images/delivery.jpg', :class => 'img_before'}
 			%h3
 				Доставка
 			%p
 				У нас есть служба доставки и поэтому мы поставляем быстро!
 
 		.elem
-			%img{ :src => 'images/delivery.jpg'}
+			%img{ :src => 'images/delivery.jpg', :class => 'img_before'}
 			%h3
-				Доставка
+				Рекламные материалы
 			%p
 				У нас есть служба доставки и поэтому мы поставляем быстро!
 
 		.elem
-			%img{ :src => 'images/delivery.jpg'}
+			%img{ :src => 'images/delivery.jpg', :class => 'img_before'}
 			%h3
-				Доставка
+				Консультация персонала
 			%p
 				У нас есть служба доставки и поэтому мы поставляем быстро!
 
-		.elem
-			%img{ :src => 'images/delivery.jpg'}
-			%h3
-				Доставка
-			%p
-				У нас есть служба доставки и поэтому мы поставляем быстро!
 
-		.elem
-			%img{ :src => 'images/delivery.jpg'}
-			%h3
-				Доставка
-			%p
-				У нас есть служба доставки и поэтому мы поставляем быстро!
 
 :javascript
 	$(document).ready(function(){
 		$('#bx-top-gallery').bxSlider({
 		controls: true,
-		captions: false
+		pager: true
 		});
 	});
