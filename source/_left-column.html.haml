@@ -1,0 +1,117 @@
+.left-column
+	.left-column-content
+		.tabbable
+			%ul.nav.nav-tabs#type-category
+				%li.active
+					%a{:href => '#type', 'data-toggle' => 'tab'}
+						Тип
+				%li
+					%a{:href => '#category', 'data-toggle' => 'tab'}
+						Категория
+			.tab-content
+				.tab-pane.active#type#category
+					%form#left-search
+						%input#left-search{:type => 'text', :placeholder => 'Поиск'}
+						%button.button#left-search
+							%i.loupe{:src => 'images/icons.png'}
+						%h5
+							Корпусная мебель
+						%ul#furniture-list
+							%li
+								%i.children.furn
+								.name-container
+									%a{:href => '#'}
+										Детская мебель
+							%li
+								%i.coffe-table.furn
+								.name-container
+									%a{:href => '#'}
+										Журнальные столы
+							%li
+								%i.chest.furn
+								.name-container
+									%a{:href => '#'}
+										Комоды
+							%li
+								%i.computer.furn
+								.name-container
+									%a{:href => '#'}
+										Компьютерные столы
+							%li
+								%i.bad.furn
+								.name-container
+									%a{:href => '#'}
+										Кровати
+							%li
+								%i.kitchen.furn
+								.name-container
+									%a{:href => '#'}
+										Кухни
+							%li
+								%i.kitchen-corner.furn
+								.name-container
+									%a{:href => '#'}
+										Кухонные уголки
+							%li
+								%i.dining-table.furn
+								.name-container
+									%a{:href => '#'}
+										Обеденные столы
+							%li
+								%i.bedside-table.furn
+								.name-container
+									%a{:href => '#'}
+										Прикроватные тумбы
+							%li
+								%i.hallway.furn
+								.name-container
+									%a{:href => '#'}
+										Прихожие
+							%li
+								%i.bedroom.furn
+								.name-container
+									%a{:href => '#'}
+										Спальни
+							%li
+								%i.cabinet.furn
+								.name-container
+									%a{:href => '#'}
+										Стенки
+							%li
+								%i.pier-glass.furn
+								.name-container
+									%a{:href => '#'}
+										Трюмо
+							%li
+								%i.dressing-table.furn
+								.name-container
+									%a{:href => '#'}
+										Туалетные столики
+							%li
+								%i.tv-stand.furn
+								.name-container
+									%a{:href => '#'}
+										Тумбы под ТВ
+							%li
+								%i.wardrobe.furn
+								.name-container
+									%a{:href => '#'}
+										Шкафы
+						%h5
+							Матрасы
+						%ul#furniture-list
+							%li
+								%i.no-spring.furn
+								.name-container
+									%a{:href => '#'}
+										Беспружинныематрасы
+							%li
+								%i.spring-tfk.furn.two-lines
+								.name-container
+									%a{:href => '#'}
+										Пружинные матрасы с блоком TFK
+							%li
+								%i.spring-bonnel.furn.two-lines
+								.name-container
+									%a{:href => '#'}
+										Пружинные матрасы с блоком «боннель»

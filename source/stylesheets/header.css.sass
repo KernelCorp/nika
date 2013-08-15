@@ -1,6 +1,7 @@
 header
 	height: 135px
 	width: 100%
+	min-width: 1079px
 	position: absolute
 	top: 0
 	padding-top: 45px
@@ -30,13 +31,10 @@ i.plus
 	margin-left: 5px
 
 i.loupe
-	background: url(../images/icons.png) -16px -5px no-repeat
+	background: url(../images/icons.png) -16px -2px no-repeat
 	width: 20px
 	height: 20px
 	display: inline-block
-	float: right
-	margin-top: 8px
-	margin-left: 5px
 
 .button
 	background-image: linear-gradient(to bottom, #5b6685, #4d5877)
@@ -56,9 +54,9 @@ i.loupe
 		float: left
 		margin-right: 30px
 	.middle
-		p.number-code, p.number
+		span.number-code, span.number
 			font-size: 25pt
-		#order-call, p.number-code, p.number
+		#order-call, span.number-code, span.number
 			display: inline
 		#search
 			width: 420px
@@ -80,6 +78,8 @@ i.loupe
 			-moz-border-radius-topright: 0
 			-webkit-border-top-right-radius: 0
 			li
+				text-align: left
+				font-family: 'Verdana'
 				padding-left: 10px
 				padding-right: 10px
 				a
@@ -107,6 +107,7 @@ i.loupe
 	height: 45px
 	line-height: 45px
 	ul.header-menu
+		font-family: 'OpenSans-semibold'
 		float: left
 		list-style-type: none
 		margin-left: 5px
@@ -117,3 +118,9 @@ i.loupe
 			color: #2e3d66
 			font-weight: bold
 			font-size: 13pt
+		li:last-child
+			margin-right: 0
+.bottom-menu-container
+	ul.header-menu
+		position: absolute
+		top: 130px

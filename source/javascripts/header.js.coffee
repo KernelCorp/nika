@@ -7,7 +7,8 @@ make_corners =() ->
 		$('#search').css('border-bottom-right-radius','0')
 		$('#search').css('-moz-border-radius-bottomright','0')
 		$('#search').css('-webkit-border-bottom-right-radius','0')
-		$('.middle .typeahead.dropdown-menu li a').append('<i class="right-arrow">')
+		if !$('.middle .typeahead.dropdown-menu li a i').length
+			$('.middle .typeahead.dropdown-menu li a').append('<i class="right-arrow">')
 	else
 		$('#search').css('border-bottom-left-radius','4px')
 		$('#search').css('-moz-border-radius-bottomleft','4px')
@@ -26,4 +27,5 @@ $(document).ready () ->
 		setTimeout(make_corners, 200)
 	$(document).click  () ->
 		setTimeout(make_corners, 200)
+	$('.dropdown-toggle').dropdown()
 	return
