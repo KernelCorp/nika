@@ -1,0 +1,209 @@
+%link{:rel => 'stylesheet', :type => 'text/css', :href => 'stylesheets/basket.css'}
+%script{:type => 'text/javascript', :src => 'javascripts/basket.js'}
+.basket
+	%h3
+		Корзина
+
+	%table.basket_elem
+		%thead
+			%tr
+				%th.center
+					Фото
+				%th
+					Название
+				%th
+					Вес
+				%th
+					Объём
+				%th
+					Цена
+				%th
+					Кол-во
+				%th.center
+					Удалить
+		%tbody
+			%tr
+				%td.center
+					%img{:src => 'images/small/stock.jpg'}
+				%td
+					Детская "Глобус 2"
+				%td
+					%span.elem_weight
+						42
+					кг.
+				%td
+					%span.elem_volume
+						4002
+					см<sup>3</sup>.
+				%td
+					%span.elem_cost
+						32 000
+					р.
+				%td
+					%input{:type => 'text', :class => 'count', :value => '1'}
+					.updown
+						%i.icon-up-arrow
+						%i.icon-down-arrow
+				%td.center
+					%i.icon-delete
+
+	%table.basket_elem
+		%thead
+			%tr
+				%th.center
+					Фото
+				%th
+					Название
+				%th
+					Вес
+				%th
+					Объём
+				%th
+					Цена
+				%th
+					Кол-во
+				%th.center
+					Удалить
+		%tbody
+			%tr
+				%td.center
+					%img{:src => 'images/small/stock.jpg'}
+				%td
+					Детская "Глобус 2"
+				%td
+					%span.elem_weight
+						42
+					кг.
+				%td
+					%span.elem_volume
+						4002
+					см<sup>3</sup>.
+				%td
+					%span.elem_cost
+						32 000
+					р.
+				%td
+					%input{:type => 'text', :class => 'count', :value => '1'}
+					.updown
+						%i.icon-up-arrow
+						%i.icon-down-arrow
+				%td.center
+					%i.icon-delete
+
+	%table.basket_elem
+		%thead
+			%tr
+				%th.center
+					Фото
+				%th
+					Название
+				%th
+					Вес
+				%th
+					Объём
+				%th
+					Цена
+				%th
+					Кол-во
+				%th.center
+					Удалить
+		%tbody
+			%tr
+				%td.center
+					%img{:src => 'images/small/stock.jpg'}
+				%td
+					Детская "Глобус 2"
+				%td
+					%span.elem_weight
+						42
+					кг.
+				%td
+					%span.elem_volume
+						4002
+					см<sup>3</sup>.
+				%td
+					%span.elem_cost
+						32 000
+					р.
+				%td
+					%input{:type => 'text', :class => 'count', :value => '1'}
+					.updown
+						%i.icon-up-arrow
+						%i.icon-down-arrow
+				%td.center
+					%i.icon-delete
+
+	%table.basket_elem
+		%thead
+			%tr
+				%th.center
+					Фото
+				%th
+					Название
+				%th
+					Вес
+				%th
+					Объём
+				%th
+					Цена
+				%th
+					Кол-во
+				%th.center
+					Удалить
+		%tbody
+			%tr
+				%td.center
+					%img{:src => 'images/small/stock.jpg'}
+				%td
+					Детская "Глобус 2"
+				%td
+					%span.elem_weight
+						42
+					кг.
+				%td
+					%span.elem_volume
+						4002
+					см<sup>3</sup>.
+				%td
+					%span.elem_cost
+						32 000
+					р.
+				%td
+					%input{:type => 'text', :class => 'count', :value => '1'}
+					.updown
+						%i.icon-up-arrow
+						%i.icon-down-arrow
+				%td.center
+					%i.icon-delete
+
+
+
+	%table.total
+		%thead
+			%tr
+				%th.bold
+					Итоговые
+				%th.t-weight
+					Вес
+				%th.t-volume
+					Объём
+				%th.t-cost
+					Стоимость
+		%tbody
+			%tr
+				%td
+					&nbsp;
+				%td.t-weight
+					%span.total_weight
+						160
+					кг.
+				%td.t-volume
+					%span.total_volume
+						4002
+					см<sup>3</sup>.
+				%td.t-cost
+					%span.total_cost
+						32 000
+					р.
+
+	%input{:type => 'submit', :class => 'btn submit', :value => 'оформить заказ'}

@@ -35,11 +35,12 @@
     %link{:rel => 'stylesheet', :type => 'text/css', :href => 'stylesheets/header.css'}
     %link{:rel => 'stylesheet', :type => 'text/css', :href => 'stylesheets/footer.css'}
     %link{:rel => 'stylesheet', :type => 'text/css', :href => 'stylesheets/bootstrap.css'}
+
+    %script{:type => 'text/javascript', :src => 'javascripts/jquery.min.js'}
   %body{class: current_page.data.body_class || 'page'}
     = partial 'header'
     = yield
-    = partial 'footer'
+    =# partial 'footer'
     -# Javascripts
-    %script{:type => 'text/javascript', :src => 'javascripts/jquery.min.js'}
     %script{:type => 'text/javascript', :src => 'javascripts/bootstrap.js'}
     %script{:type => 'text/javascript', :src => 'javascripts/header.js'}

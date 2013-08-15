@@ -1,0 +1,127 @@
+@font-face
+	font-family: OpenSans
+	src: url(OpenSans-Semibold.ttf)
+
+i[class^='icon-']
+	background:
+		image: url(../images/icons.png)
+		repeat: no-repeat
+	cursor: pointer
+	display: inline-block
+	height: 11px
+	width: 11px
+
+i.icon-up-arrow
+	display: block
+	width: 11px
+	height: 8px
+	background-position: 0 -22px
+
+i.icon-down-arrow
+	display: block
+	width: 11px
+	height: 8px
+	background-position: 0 -31px
+
+i.icon-delete
+	width: 16px
+	height: 16px
+	background-position: -11px -21px
+
+
+.basket
+	width: 846px
+	margin: 0 auto
+	text-align: right
+
+	h3
+		color: #d400b6
+		font-family: OpenSans
+		text-align: right
+
+	table.basket_elem
+		border-collapse: collapse
+		border-radius: 5px
+		box-shadow: 0 0 5px #444
+		font-family: Verdana
+		text-align: left
+		margin: 5px 0 15px
+		width: 100%
+
+		.center
+			text-align: center
+
+		.bold
+			font-weight: bold
+
+		thead
+			background-color: #f3f3f3
+			th
+				font-weight: normal
+				height: 28px
+				padding: 0 12px
+				text-align: left
+
+		tbody
+
+			td
+				font-weight: bold
+				height: 86px
+				padding: 0 12px
+
+				img
+					max-height: 86px
+					max-width: 100px
+
+				.updown
+					display: inline-block
+
+				.count
+					border: none
+					border-radius: 3px
+					box-shadow: 0 0 3px #444
+					margin: 0
+					vertical-align: bottom
+					width: 50px
+
+	.total
+		border-collapse: collapse
+		display: inline-table
+		font-family: Verdana
+		text-align: left
+		.center
+			text-align: center
+
+		.bold
+			font-weight: bold
+		th
+			font-weight: normal
+			padding: 0 10px
+		td
+			font-weight: bold
+			padding: 0 10px
+
+		.t-weight
+			width: 68px
+		.t-volume
+			width: 108px
+		.t-cost
+			width: 103px
+
+	.right-space
+		margin-right: 80px
+
+	.submit
+		background-color: #5f6a8a
+		background-image: linear-gradient(to bottom, #4b5575, #5f6a8a)
+		border-radius: 5px
+		color: #fff
+		display: inline-block
+		font-family: OpenSans
+		font-weight: bold
+		text-shadow: none
+		text-transform: uppercase
+		height: 30px
+		margin-top: 5px
+		padding: 0 12px
+		width: 197px
