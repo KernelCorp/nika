@@ -1,273 +1,272 @@
 %link{rel:'stylesheet', type:'text/css', href:'./stylesheets/personal_page.css'}
-.content-box
-  .page-title
-    Личный кабинет
-  .bx-change
-    %form
-      %table.change
-        %tr
-          %td
-            .field-title
-              .marked_up
-                *
-              контактное лицо:
-            %input.d-field{type:'text', placeholder:'Иван Иванов'}
-          %td
-            .field-title
-              .marked_up
-                *
-              e-mail:
-            %input.d-field{type:'text', placeholder:'Ivan.ivanov@organizaciya.com'}
-        %tr
-          %td
-            .field-title
-              .marked_up
-                *
-              наименование организации:
-            %input.d-field{type:'text', placeholder:'ООО “Наименование организации”'}
-          %td
-            .field-title
-              Skype:
-            %input.d-field{type:'text', placeholder:'Ivan.ivanov@organizaciya.com'}
-        %tr
-          %td
-            .field-title
-              .marked_up
-                *
-              адрес организации:
-            %input.d-field{type:'text', placeholder:'ООО “Наименование организации”'}
-          %td
-            .field-title
-              icq:
-            %input.d-field{type:'text', placeholder:'1545775556'}
-        %tr
-          %td
-            .field-title
-              .marked_up
-                *
-              телефон:
-            %input.d-field{type:'text', placeholder:'+7 923 123 45 67'}
-          %td
-            .field-title
-              .marked_up
-                *
-              поля отмеченные звездочкой являются обязательными для заполнения
-            %input.send-submit{type:'submit', name:'Submit', value:'изменить данные'}
-  .bx-title
-    История заказов
-  .bx-history
-    %table.history
-      %thead
-        %tr
-          %th
-            №
-          %th
-            дата
-          %th
-            &nbsp;
-          %th
-            статус
-          %th
-            сумма
-          %th
-            документы
-          %th
-            повторить
-      %tbody
-        %tr
-          %td
-            1013
-          %td
-            16.07.2013
-          %td
-            Состав заказа
-            %ul.l-items
-              %li
-                Детская "Гном"
-              %li
-                Уголок школьника №4
-              %li
-                Детская "Глобус 2"
-              %li
-                Детская "Глобус 2"
-              %li
-                Детская "Глобус 2"
-          %td
-            в обработке
-            %ul.l-count
-              %li
-                x 1 =
-              %li
-                x 1 =
-              %li
-                x 2 =
-              %li
-                x 1 =
-              %li
-                x 2 =
-          %td
-            90 000 р.
-            %ul.l-sum
-              %li
-                20 000р.
-              %li
-                4 000р.
-              %li
-                20 000р.
-              %li
-                6 000р.
-              %li
-                20 000р.
-          %td
-            %img
-            счет-фактура
-          %td
-            %img
-        %tr
-          %td
-            1023
-          %td
-            12.05.2013
-          %td
-            Состав заказа
-          %td
-            оплачен
-          %td
-            70 000р.
-          %td
-            %img
-            счет-фактура
-          %td
-            %img
-        %tr
-          %td
-            2013
-          %td
-            27.02.2013
-          %td
-            Состав заказа
-          %td
-            в обработке
-          %td
-            10 000р.
-          %td
-            %img
-            счет-фактура
-          %td
-            %img
-        %tr
-          %td
-            1012
-          %td
-            02.11.2012
-          %td
-            Состав заказа
-          %td
-            оплачен
-          %td
-            40 000р.
-          %td
-            %img
-            счет-фактура
-          %td
-            %img
-        %tr
-          %td
-            7012
-          %td
-            17.09.2012
-          %td
-            Состав заказа
-          %td
-            в обработке
-          %td
-            10 000р.
-          %td
-            %img
-            счет-фактура
-          %td
-            %img
-        %tr
-          %td
-            1072
-          %td
-            11.07.2012
-          %td
-            Состав заказа
-          %td
-            оплачен
-          %td
-            20 000р.
-          %td
-            %img
-            счет-фактура
-          %td
-            %img
-        %tr
-          %td
-            0224
-          %td
-            01.06.2012
-          %td
-            Состав заказа
-          %td
-            в обработке
-          %td
-            70 000р.
-          %td
-            %img
-            счет-фактура
-          %td
-            %img
-  .bx-title
-    Задать вопрос
-  .bx-questions
-    %form
-      текст вопроса:
-      %input{type:'text'}
-      %input{type:'submit', name:'send', value:'отправить'}
-    .add-file-link
-      %a{href:'#'}Прикрепить файл
-      %img
-    .l-questions
-      .l-title
-        История
-      .question-container
-        .q-title
-          .author
-            %a{href:'#'}Иван Иванов
-          .date
-            02.06.2012  |  17:00
-        .q-body
-          Хорус, следовательно, полифигурно иллюстрирует звукорядный рок-н-ролл 50-х, таким образом конструктивное
-          состояние всей музыкальной ткани или какой-либо из составляющих ее субструктур (в том числе: временнoй,
-          гармонической, динамической, тембровой, темповой) возникает как следствие их выстраивания на основе
-          определенного ряда (модуса). Райдер, в том числе, заканчивает звукоряд, это и есть одномоментная вертикаль в
-          сверхмногоголосной
-      .question-container
-        .q-title
-          .author
-            %a{href:'#'}Администратор
-          .date
-            01.06.2012  |  13:28
-        .q-body
-          Райдер, в том числе, заканчивает звукоряд, это и есть одномоментная вертикаль в сверхмногоголосной полифонической ткани. Детройтское техно ненаблюдаемо.
-      .question-container
-        .q-title
-          .author
-            %a{href:'#'}Иван Иванов
-          .files
-            %a{href:'#'}счет-фактура
-            %img
-          .date
-            04.05.2012  |  19:30
-        .q-body
-          Ок.
-      .question-container
-        .q-title
-          .author
-            %a{href:'#'}Администратор
-          .date
-            01.06.2012  |  13:28
-        .q-body
-          Райдер, в том числе, заканчивает звукоряд, это и есть одномоментная вертикаль в сверхмногоголосной полифонической ткани. Детройтское техно ненаблюдаемо.
+.page-title
+  Личный кабинет
+.bx-change
+  %form
+    %table.change
+      %tr
+        %td
+          .field-title
+            .marked_up
+              *
+            контактное лицо:
+          %input.d-field{type:'text', placeholder:'Иван Иванов'}
+        %td
+          .field-title
+            .marked_up
+              *
+            e-mail:
+          %input.d-field{type:'text', placeholder:'Ivan.ivanov@organizaciya.com'}
+      %tr
+        %td
+          .field-title
+            .marked_up
+              *
+            наименование организации:
+          %input.d-field{type:'text', placeholder:'ООО “Наименование организации”'}
+        %td
+          .field-title
+            Skype:
+          %input.d-field{type:'text', placeholder:'Ivan.ivanov@organizaciya.com'}
+      %tr
+        %td
+          .field-title
+            .marked_up
+              *
+            адрес организации:
+          %input.d-field{type:'text', placeholder:'ООО “Наименование организации”'}
+        %td
+          .field-title
+            icq:
+          %input.d-field{type:'text', placeholder:'1545775556'}
+      %tr
+        %td
+          .field-title
+            .marked_up
+              *
+            телефон:
+          %input.d-field{type:'text', placeholder:'+7 923 123 45 67'}
+        %td
+          .field-title
+            .marked_up
+              *
+            поля отмеченные звездочкой являются обязательными для заполнения
+          %input.send-submit{type:'submit', name:'Submit', value:'изменить данные'}
+.bx-title
+  История заказов
+.bx-history
+  %table.history
+    %thead
+      %tr
+        %th
+          №
+        %th
+          дата
+        %th
+          &nbsp;
+        %th
+          статус
+        %th
+          сумма
+        %th
+          документы
+        %th
+          повторить
+    %tbody
+      %tr
+        %td
+          1013
+        %td
+          16.07.2013
+        %td
+          Состав заказа
+          %ul.l-items
+            %li
+              Детская "Гном"
+            %li
+              Уголок школьника №4
+            %li
+              Детская "Глобус 2"
+            %li
+              Детская "Глобус 2"
+            %li
+              Детская "Глобус 2"
+        %td
+          в обработке
+          %ul.l-count
+            %li
+              x 1 =
+            %li
+              x 1 =
+            %li
+              x 2 =
+            %li
+              x 1 =
+            %li
+              x 2 =
+        %td
+          90 000 р.
+          %ul.l-sum
+            %li
+              20 000р.
+            %li
+              4 000р.
+            %li
+              20 000р.
+            %li
+              6 000р.
+            %li
+              20 000р.
+        %td
+          %img
+          счет-фактура
+        %td
+          %img
+      %tr
+        %td
+          1023
+        %td
+          12.05.2013
+        %td
+          Состав заказа
+        %td
+          оплачен
+        %td
+          70 000р.
+        %td
+          %img
+          счет-фактура
+        %td
+          %img
+      %tr
+        %td
+          2013
+        %td
+          27.02.2013
+        %td
+          Состав заказа
+        %td
+          в обработке
+        %td
+          10 000р.
+        %td
+          %img
+          счет-фактура
+        %td
+          %img
+      %tr
+        %td
+          1012
+        %td
+          02.11.2012
+        %td
+          Состав заказа
+        %td
+          оплачен
+        %td
+          40 000р.
+        %td
+          %img
+          счет-фактура
+        %td
+          %img
+      %tr
+        %td
+          7012
+        %td
+          17.09.2012
+        %td
+          Состав заказа
+        %td
+          в обработке
+        %td
+          10 000р.
+        %td
+          %img
+          счет-фактура
+        %td
+          %img
+      %tr
+        %td
+          1072
+        %td
+          11.07.2012
+        %td
+          Состав заказа
+        %td
+          оплачен
+        %td
+          20 000р.
+        %td
+          %img
+          счет-фактура
+        %td
+          %img
+      %tr
+        %td
+          0224
+        %td
+          01.06.2012
+        %td
+          Состав заказа
+        %td
+          в обработке
+        %td
+          70 000р.
+        %td
+          %img
+          счет-фактура
+        %td
+          %img
+.bx-title
+  Задать вопрос
+.bx-questions
+  %form
+    текст вопроса:
+    %input{type:'text'}
+    %input{type:'submit', name:'send', value:'отправить'}
+  .add-file-link
+    %a{href:'#'}Прикрепить файл
+    %img
+  .l-questions
+    .l-title
+      История
+    .question-container
+      .q-title
+        .author
+          %a{href:'#'}Иван Иванов
+        .date
+          02.06.2012  |  17:00
+      .q-body
+        Хорус, следовательно, полифигурно иллюстрирует звукорядный рок-н-ролл 50-х, таким образом конструктивное
+        состояние всей музыкальной ткани или какой-либо из составляющих ее субструктур (в том числе: временнoй,
+        гармонической, динамической, тембровой, темповой) возникает как следствие их выстраивания на основе
+        определенного ряда (модуса). Райдер, в том числе, заканчивает звукоряд, это и есть одномоментная вертикаль в
+        сверхмногоголосной
+    .question-container
+      .q-title
+        .author
+          %a{href:'#'}Администратор
+        .date
+          01.06.2012  |  13:28
+      .q-body
+        Райдер, в том числе, заканчивает звукоряд, это и есть одномоментная вертикаль в сверхмногоголосной полифонической ткани. Детройтское техно ненаблюдаемо.
+    .question-container
+      .q-title
+        .author
+          %a{href:'#'}Иван Иванов
+        .files
+          %a{href:'#'}счет-фактура
+          %img
+        .date
+          04.05.2012  |  19:30
+      .q-body
+        Ок.
+    .question-container
+      .q-title
+        .author
+          %a{href:'#'}Администратор
+        .date
+          01.06.2012  |  13:28
+      .q-body
+        Райдер, в том числе, заканчивает звукоряд, это и есть одномоментная вертикаль в сверхмногоголосной полифонической ткани. Детройтское техно ненаблюдаемо.
