@@ -1,1 +1,27 @@
 = partial 'main_top_gallery'
+
+.container
+	.partners
+		.left
+			%h3
+				Наши поставщики
+			.download_area
+				%a{:href => '#'}
+					Скачать прайс лист
+				%br
+				%a{:href => '#'}
+					Скачать каталог
+
+		.right
+			- for i in 1..6
+				%img{ :src => "images/suppliers/image_#{i}.jpg"}
+
+			- for i in [5, 6, 1, 2, 3, 4]
+				%img{ :src => "images/suppliers/image_#{i}.jpg"}
+
+
+	.left-block
+		this is left block
+		/= partial 'main_page_left'
+	.right-block
+		= partial 'main_page_right'
