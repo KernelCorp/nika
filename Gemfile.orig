@@ -3,3 +3,8 @@
 source 'http://rubygems.org'
 
 gem "middleman", "~>3.0.13"
+<<<<<<< HEAD
+=======
+
+#gem 'therubyracer'
+>>>>>>> 44dfd63b3d53dc20be70dd37fedaf14e44d08755

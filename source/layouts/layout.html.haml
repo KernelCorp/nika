@@ -32,18 +32,14 @@
     %link(rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png")
     
     -# Stylesheets
-    = stylesheet_link_tag 'application'
+    %link{:rel => 'stylesheet', :type => 'text/css', :href => 'stylesheets/header.css'}
+    %link{:rel => 'stylesheet', :type => 'text/css', :href => 'stylesheets/footer.css'}
+    %link{:rel => 'stylesheet', :type => 'text/css', :href => 'stylesheets/bootstrap.css'}
   %body{class: current_page.data.body_class || 'page'}
+    = partial 'header'
     = yield
+    = partial 'footer'
     -# Javascripts
-    = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js'
-    = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'
-    = javascript_include_tag 'application'
-
-    - if build?
-      -# Google Analytics
-      :javascript
-        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
+    %script{:type => 'text/javascript', :src => 'javascripts/jquery.min.js'}
+    %script{:type => 'text/javascript', :src => 'javascripts/bootstrap.js'}
+    %script{:type => 'text/javascript', :src => 'javascripts/header.js'}

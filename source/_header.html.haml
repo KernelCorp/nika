@@ -1,0 +1,51 @@
+%header
+	.header-content
+		.top-container
+			.left
+				%img.logo{:src => './images/logo.png'}
+			.right
+				%i{:class=>'basket'}
+				%p
+					%a{ :href=> '#'}
+						В корзине
+					3 товара
+					%br
+					на сумму 210 000 р.
+				%a{:href => '#'}
+					регистрация на сайте
+					%i.right-arrow
+				%br
+				%a{:href => '#'}
+					вход в личный кабинет
+					%i.plus
+			.middle
+				%input{:type => 'button', :class => 'head-button button', :id=> 'order-call', :value => 'Заказать звонок'}
+				%p{:class => 'number-code'} +7 (383)
+				%p{:class => 'number'} 25-10-100
+				%br
+				%input#search{:type => 'text', 'data-provide' => 'typeahead'}
+				%input{:type => 'button', :class => 'head-button button', :id=> 'search-head', :value => "Найти"}
+		.bottom-menu-container
+			%ul.header-menu
+				%li
+					%a.header-menu{:href => '#'}
+						О компании
+				%li
+					%a.header-menu{:href => '#'}
+						Новости
+				%li
+					%a.header-menu{:href => '#'}
+						Вся мебель
+				%li
+					%a.header-menu{:href => '#'}
+						Услуги
+				%li
+					%a.header-menu{:href => '#'}
+						Поставщикам
+				%li
+					%a.header-menu{:href => '#'}
+						Клиенты
+				%li
+					%a.header-menu{:href => '#'}
+						Контакты
+
