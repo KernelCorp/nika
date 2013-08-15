@@ -38,6 +38,8 @@
     %link{:rel => 'stylesheet', :type => 'text/css', :href => 'stylesheets/fonts.css'}
     %link{:rel => 'stylesheet', :type => 'text/css', :href => 'stylesheets/left-column.css'}
     %link{:rel => 'stylesheet', :type => 'text/css', :href => 'stylesheets/bootstrap.css'}
+
+    %script{:type => 'text/javascript', :src => 'javascripts/jquery.min.js'}
   %body{class: current_page.data.body_class || 'page'}
     = partial 'header'
     .content
@@ -47,6 +49,5 @@
           = yield
     = partial 'footer'
     -# Javascripts
-    %script{:type => 'text/javascript', :src => 'javascripts/jquery.min.js'}
     %script{:type => 'text/javascript', :src => 'javascripts/bootstrap.js'}
     %script{:type => 'text/javascript', :src => 'javascripts/header.js'}
