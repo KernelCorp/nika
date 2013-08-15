@@ -45,7 +45,8 @@
     .content
       .content-inside
         = partial 'left-column'
-        = yield
+        .right-container
+          = yield
     = partial 'footer'
     -# Javascripts
     %script{:type => 'text/javascript', :src => 'javascripts/bootstrap.js'}
