@@ -27,25 +27,29 @@
 				%input{:type => 'button', :class => 'head-button button', :id=> 'search-head', :value => "Найти"}
 		.bottom-menu-container
 			%ul.header-menu
-				%li
-					%a.header-menu{:href => '#'}
-						О компании
-				%li
-					%a.header-menu{:href => '#'}
-						Новости
-				%li
-					%a.header-menu{:href => '#'}
-						Вся мебель
-				%li
-					%a.header-menu{:href => '#'}
-						Услуги
-				%li
-					%a.header-menu{:href => '#'}
-						Поставщикам
-				%li
-					%a.header-menu{:href => '#'}
-						Клиенты
-				%li
-					%a.header-menu{:href => '#'}
-						Контакты
-
+				.btn-group
+					%li
+						%a.header-menu{:href => '#'}
+							О компании
+					%li
+						%a.header-menu{:href => '#'}
+							Новости
+					%li
+						%a.header-menu.dropdown-toggle{:href => '#', 'data-toggle' => 'dropdown'}
+							Вся мебель
+					%li
+						%a.header-menu{:href => '#'}
+							Услуги
+					%li
+						%a.header-menu{:href => '#'}
+							Поставщикам
+					%li
+						%a.header-menu{:href => '#'}
+							Клиенты
+					%li
+						%a.header-menu{:href => '#'}
+							Контакты
+					%ul.dropdown-menu
+						%li
+							%p
+								hello!!!
