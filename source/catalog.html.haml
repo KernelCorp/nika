@@ -1,0 +1,43 @@
+= stylesheet_link_tag 'catalog'
+%h2 Котята трансформеры
+%div.view
+  %p Вид:
+  %a.cubes.active{:href => "javascript:function(){ return false;}"} Плиткой
+  %a.list{:href => "javascript:function(){ return false;}"} Списком
+  %a{:href => "javascript:function(){ return false;}"} Показать все
+%div.products
+  - 1.upto(6).each do
+    %div.product
+      %h2 Кот-трансформер "Кот-сан"
+      %p 
+        Артикул 
+        %b 
+          673849512
+      %div.image
+        // it's for centring image
+        %div 
+          %div
+            %img{:src => "http://placekitten.com/30/80"}
+        %img{:src => "http://placekitten.com/150/125"}
+      %div.spanner
+        %p.price 100500 р.
+        %a{:href => "javascript:function(){ return false; }"} ?
+        %a.buy.button{:href => "javascript:function(){ return false; }"}
+          Купить
+  %div.paginator-wrapper
+    %ul.paginator
+      %li 
+        %a{:href => "javascript:function(){ return false; }"} &lt;&lt;
+      %li 
+        %a{:href => "javascript:function(){ return false; }"} &lt;
+      %li 
+        %a{:href => "javascript:function(){ return false; }"} 1
+      %li 
+        %a{:href => "javascript:function(){ return false; }"} 2
+      %li 
+        %a{:href => "javascript:function(){ return false; }"} 3
+      %li 
+        %a{:href => "javascript:function(){ return false; }"} &gt;
+      %li 
+        %a{:href => "javascript:function(){ return false; }"} &gt;&gt;
+
