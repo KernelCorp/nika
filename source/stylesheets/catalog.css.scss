@@ -12,7 +12,7 @@ $color-dark-blue: #2e3d66;
 }
 
 .right-container {
-	font-family: Sans, Arial;
+	font-family: Arial;
 	text-align: left;
 	> h2 {
 		font-size: 23px;
@@ -85,7 +85,7 @@ $color-dark-blue: #2e3d66;
 		display: block;
 		> .product {
 			padding: 15px;
-			box-sizing: boder-box;
+			box-sizing: border-box;
 			-moz-box-sizing: border-box;
 			box-shadow: 0 0 10px #aaa;
 			width: 230px;
