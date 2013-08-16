@@ -1,9 +1,9 @@
-= stylesheet_link_tag 'catalog'
+= stylesheet_link_tag 'catalog-list'
 %h2 Котята трансформеры
 %div.view
   %p Вид:
-  %a.cubes.active{:href => "javascript:function(){ return false;}"} Плиткой 
-  %a.list{:href => "javascript:function(){ return false;}"} Списком 
+  %a.cubes{:href => "javascript:function(){ return false;}"} Плиткой
+  %a.active.list{:href => "javascript:function(){ return false;}"} Списком
   %a{:href => "javascript:function(){ return false;}"} Показать все
 %div.products
   - 1.upto(6).each do
@@ -13,6 +13,13 @@
         Артикул
         %b
           673849512
+      %div.description
+        Something to post there, text and so on
+        Something to post there, text and so on
+        Something to post there, text and so on
+        Something to post there, text and so on
+        Something to post there, text and so on
+        Something to post there, text and so on
       %div.image
         // it's for centring image
         %div
@@ -20,25 +27,26 @@
             %img{:src => "/images/action.png"}
         %img{:src => "/images/stock.jpg"}
       %div.spanner
-        %p.price 10 500 p.
-        %i.icon-info
-          %a.info{:href => "javascript:function(){ return false; }"} ?
-          .information
-            Указана <b>рекомендованная</b> розничная цена в
-            Новосибирске
-            .separator
-            Для того, чтобы увидеть оптовые цены вам необходимо
-            %a{:href =>'#'}
-              зарегистрироваться
+        %div
+          %p.price 10 500 p.
+          %i.icon-info
+            %a.info{:href => "javascript:function(){ return false; }"} ?
+            .information
+              Указана <b>рекомендованная</b> розничная цена в
+              Новосибирске
+              .separator
+              Для того, чтобы увидеть оптовые цены вам необходимо
+              %a{:href =>'#'}
+                зарегистрироваться
         %a.buy.button{:href => "javascript:function(){ return false; }"}
           Купить
   %div.paginator-wrapper
     %ul.paginator
       %li.quote 
         %a{:href => "javascript:function(){ return false; }"} &lt;&lt;
-      %li.qoute
+      %li.quote
         %a{:href => "javascript:function(){ return false; }"} &lt;
-      %li
+      %li 
         %a{:href => "javascript:function(){ return false; }"} 1
       %li 
         %a{:href => "javascript:function(){ return false; }"} 2
@@ -46,5 +54,5 @@
         %a{:href => "javascript:function(){ return false; }"} 3
       %li.quote
         %a{:href => "javascript:function(){ return false; }"} &gt;
-      %li.quote 
+      %li.quote
         %a{:href => "javascript:function(){ return false; }"} &gt;&gt;
