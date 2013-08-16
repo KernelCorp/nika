@@ -1,4 +1,4 @@
-= stylesheet_link_tag 'catalog'
+%link{:rel => 'stylesheet', :type => 'text/css', :href => 'stylesheets/catalog.css'}
 %h2 Котята трансформеры
 %div.view
   %p Вид:
@@ -17,8 +17,8 @@
         // it's for centring image
         %div
           %div
-            %img{:src => "/images/action.png"}
-        %img{:src => "/images/stock.jpg"}
+            %img{:src => "images/action.png"}
+        %img{:src => "images/stock.jpg"}
       %div.spanner
         %p.price 10 500 p.
         %i.icon-info
