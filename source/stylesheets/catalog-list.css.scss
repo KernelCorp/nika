@@ -38,7 +38,9 @@ $color-dark-blue: #2e3d66;
 			height: 21px;
 			position: relative;
 			top: 5px;
-			background-repeat: none;
+			left: 5px;
+			margin-right: 5px;
+			background-repeat: no-repeat;
 			background-image: url('/images/list-block.png');
 		}
 		&.cubes.active:after {
@@ -46,8 +48,8 @@ $color-dark-blue: #2e3d66;
 			width: 21px;
 		}
 		&.cubes:after {
-			background-position: -22px 0;
-			width: 22px;
+			background-position: -21px 0;
+			width: 21px;
 		}
 		&.list.active:after {
 			background-position: 0 -21px;
@@ -72,6 +74,8 @@ $color-dark-blue: #2e3d66;
 		a {
 			&:last-child {
 				float: right;
+				position: relative;
+				top: 5px;
 			}
 		}
 	}
@@ -110,6 +114,7 @@ $color-dark-blue: #2e3d66;
 				padding-top: 25px;
 				text-align: left;
 				font-size: 18px;
+				line-height: 28px;
 			}
 			.image {
 				position: absolute;
@@ -138,16 +143,17 @@ $color-dark-blue: #2e3d66;
 				position: absolute;
 				right: 25px;
 				top: 25px;
-				width: 120px;
+				width: 150px;
 				height: 90px;
 				font-size: 18px;
+				line-height: 28px;
 				> div {
-					padding-bottom: 25px;
+					padding-bottom: 30px;
 				}
 				> div > * {
 					display: inline-block;
 					color: $color-dark-blue;
-					font-size: 18px;
+					font-size: 20px;
 					font-style: italic;
 					font-weight: bold;
 					@include only-object;
@@ -156,6 +162,9 @@ $color-dark-blue: #2e3d66;
 					padding-right: 2px;
 					position: relative;
 					top: -2px;
+					.information:before {
+						width: 32px;
+					}
 					a.info {
 						&:hover {
 							text-decoration: none;
@@ -183,11 +192,11 @@ $color-dark-blue: #2e3d66;
 				li {
 					font-weight: bold;
 					display: inline;
-					&:nth-child(2-n) a, &:nth-last-child(2-n) a {
+					&.quotes a {
 						color: $color-dark-blue;
-					}
-					&.quote a {
-						color: $color-dark-blue;
+						&:hover {
+							color: $color-pink;
+						}
 					}
 				}
 			}
