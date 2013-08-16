@@ -30,7 +30,7 @@ $color-dark-blue: #2e3d66;
 		}
 		&.active {
 			color: $color-grey;
-		}	
+		}
 		&.cubes:after, &.list:after {
 			content: "  ";
 			display: inline-block;
@@ -40,7 +40,7 @@ $color-dark-blue: #2e3d66;
 			top: 5px;
 			left: 5px;
 			margin-right: 5px;
-			background-repeat: none;
+			background-repeat: no-repeat;
 			background-image: url('/images/list-block.png');
 		}
 		&.cubes.active:after {
@@ -48,8 +48,8 @@ $color-dark-blue: #2e3d66;
 			width: 21px;
 		}
 		&.cubes:after {
-			background-position: -22px 0;
-			width: 22px;
+			background-position: -21px 0;
+			width: 21px;
 		}
 		&.list.active:after {
 			background-position: 0 -21px;
@@ -84,39 +84,47 @@ $color-dark-blue: #2e3d66;
 		width: 790px;
 		display: block;
 		> .product {
-			padding: 15px;
+			padding: 18px 190px 20px 200px;
+			position: relative;
 			box-sizing: border-box;
 			-moz-box-sizing: border-box;
 			box-shadow: 0 0 10px #aaa;
-			width: 230px;
-			min-height: 270px;
 			background-color: $color-white;
 			border-radius: 5px;
-			display: inline-block;
-			margin-right: 45px;
+			display: block;
 			margin-bottom: 30px;
-			&:nth-child(3n) {
-				margin-right: 0;
-			}
 			text-align: center;
+			min-height: 190px;
 			h2 {
 				font-size: 15px;
 				line-height: 20px;
 				color: $color-black;
 				@include only-object;
+				display: inline-block;
+				float: left;
 			}
 			> p {
 				color: $color-pink;
 				text-align: center;
+				display: inline-block;
+				float: right;
 				@include only-object;
 			}
+			.description {
+				padding-top: 25px;
+				text-align: left;
+				font-size: 18px;
+				line-height: 28px;
+			}
 			.image {
-				position: relative;
+				position: absolute;
+				top: 10px;
+				left: 0;
 				width: 200px;
 				margin: 10px 0;
 				> div {
 					position: absolute;
-					left: -15px;
+					left: 0px;
 					width: 30px;
 					height: 100%;
 					div {
@@ -131,13 +139,21 @@ $color-dark-blue: #2e3d66;
 			}
 			.spanner {
 				@include only-object;
-				*display: table-row;
 				border-spacing: 10px;
-				width: 100%;
-				> * {
+				position: absolute;
+				right: 25px;
+				top: 25px;
+				width: 150px;
+				height: 90px;
+				font-size: 18px;
+				line-height: 28px;
+				> div {
+					padding-bottom: 30px;
+				}
+				> div > * {
 					display: inline-block;
 					color: $color-dark-blue;
-					font-size: 16px;
+					font-size: 20px;
 					font-style: italic;
 					font-weight: bold;
 					@include only-object;
@@ -149,16 +165,18 @@ $color-dark-blue: #2e3d66;
 					.information:before {
 						width: 32px;
 					}
-					a.question {
+					a.info {
 						&:hover {
 							text-decoration: none;
 						}
 					}
 				}
 				.buy {
-					width: 64px;
+					width: 80px;
+					font-size: 20px;
 					text-transform: uppercase;
 					font-style: normal;
+					font-weight: bold;
 					color: $color-white;
 					padding: 5px 12px;
 				}
