@@ -1,14 +1,23 @@
 $color-blue: #0083df;
 $color-pink: #d400b6;
 $color-grey: #c8c8c8;
+$color-light-grey: #f3f3f3;
 $color-black: #000;
 $color-white: #fff;
 $color-dark-blue: #2e3d66;
 
+@mixin only-object {
+	margin: 0;
+	padding: 0;
+}
+
 .right-container {
 	font-family: Sans, Arial;
+	text-align: left;
 	> h2 {
 		font-size: 23px;
+		line-height: 20px;
+		font-weight: normal;
 		color: $color-pink;
 	}
 	a {
@@ -18,60 +27,125 @@ $color-dark-blue: #2e3d66;
 			color: $color-pink;
 			text-decoration: underline;
 		}
-		&.cubes, &.list {
-			width: 20px;
-			height: 20px;
-		}
 		&.active {
 			color: $color-grey;
+		}
+		&.cubes:after, &.list:after {
+			content: " ";
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin-right: 2px;
+			position: relative;
+			top: 5px;
 		}
 		&.cubes:after {
 			background-image: url('http://placekitten.com/20/20');
 		}
 		&.list:after {
-			background-iamge: url('http://placekitten.com/20/20');
+			background-image: url('http://placekitten.com/20/20');
+		}
+	}
+	> .view {
+		background-color: $color-light-grey;
+		border-radius: 5px;
+		padding: 12px 30px 12px 20px;
+		* {
+			display: inline;
+		}
+		p {
+			color: $color-black;
+			@include only-object;
+		}
+		a {
+			&:last-child {
+				float: right;
+			}
 		}
 	}
 	> .products {
+		margin: 30px auto;
+		width: 790px;
+		display: block;
 		> .product {
+			padding: 15px;
+			box-sizing: boder-box;
+			-moz-box-sizing: border-box;
+			width: 230px;
+			min-height: 270px;
+			background-color: $color-white;
+			border-radius: 5px;
+			display: inline-block;
+			margin-right: 45px;
+			margin-bottom: 30px;
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+			text-align: center;
 			h2 {
-				font-size: 20px;
+				font-size: 15px;
+				line-height: 20px;
 				color: $color-black;
+				@include only-object;
 			}
 			> p {
 				color: $color-pink;
+				text-align: center;
+				@include only-object;
 			}
 			.image {
 				position: relative;
-				width: 230px;
-				height: 165px;
-				&:first-child {
+				width: 200px;
+				margin: 10px 0;
+				> div {
 					position: absolute;
-					height: 165px;
-					width: 30px;
 					left: 1px;
+					width: 30px;
+					height: 100%;
+					div {
+						display: table-cell;
+						height: 130px;
+						vertical-align: middle;
+						img {
+							display: inline;
+						}
+					}
 				}
 			}
 			.spanner {
+				@include only-object;
+				display: table-row;
+				width: 100%;
 				* {
-					display: inline-block;
+					display: table-cell;
 					color: $color-dark-blue;
-					text-transform: italic;
-					font-size: 20px;
+					font-size: 17px;
+					font-style: italic;
+					font-weight: bold;
+					width: 40%;
+					@include only-object;
 				}
-				.buy-button {
+				a {
+					width: auto;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+				.buy {
+					width: 40%;
 					text-transform: uppercase;
+					font-style: normal;
 					color: $color-white;
-					background-image: url('buy-button.png');
 					padding: 10px 13px;
 				}
 			}
 		}
 		> .paginator-wrapper {
 			width: 100%;
+			text-align: center;
 			.paginator {
 				list-style: none;
-				display: block;
+				display: inline;
 				margin: 0 auto;
 				li {
 					display: inline;
