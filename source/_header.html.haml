@@ -11,19 +11,30 @@
 					3 товара
 					%br
 					на сумму 210 000 р.
-				%a.reg{:href => '#'}
-					регистрация на сайте
-					%i.plus
-				%a.reg{:href => '#'}
-					вход в личный кабинет
-					%i.right-arrow
+				.not-signed-in
+					%a.reg{:href => '#'}
+						регистрация на сайте
+						%i.plus
+					%a.reg{:href => '#'}
+						вход в личный кабинет
+						%i.right-arrow
+				.signed-in
+					%a.with-icon.left-in{:href => '#'}
+						%i.man
+						Иван иванов
+					%a.with-icon.right-in{:href => '#'}
+						Выход
+						%i.exit
 			.middle
 				%input{:type => 'button', :class => 'head-button button', :id=> 'order-call', :value => 'Заказать звонок'}
 				%span{:class => 'number-code'} +7 (383)
 				%span{:class => 'number'} 25-10-100
 				%br
-				%input#search{:type => 'text', 'data-provide' => 'typeahead'}
-				%input{:type => 'button', :class => 'head-button button', :id=> 'search-head', :value => "Найти"}
+				%form#head-search
+					%input#search{:type => 'text', 'data-provide' => 'typeahead'}
+					%button{:type => 'submit', :class => 'head-button button', :id=> 'search-head'}
+						найти
+						%i.loupe.head-loupe
 		.bottom-menu-container
 			%ul.header-menu
 				%li
@@ -35,7 +46,12 @@
 				%li#menu1{:style=>'position:relative'}
 					%a.header-menu.dropdown-toggle{:href => '#', 'data-toggle' => 'dropdown', 'aria-labelledby'=> 'dLabel'}
 						Вся мебель
+						%i.down-arrow
 					.dropdown-menu
+						.head
+							%a.header-menu.dropdown-toggle{:href => '#', 'data-toggle' => 'dropdown', 'aria-labelledby'=> 'dLabel'}
+								Вся мебель
+								%i.down-arrow
 						%h4
 							Корпусная мебель
 						%table#dropdown-table
