@@ -10,17 +10,17 @@ body, html
 	min-height: 900px
 	margin-bottom: -330px
 	padding-top: 200px
-	padding-bottom: 270px
+	padding-bottom: 320px
 .content.after
 	display: block
 	height: 330px
 .content-inside
 	width: 100%
 .right-container
-	float: right
+	display: inline-block
 	vertical-align: top
 	margin-left: 31px
-	width: 844px
+	width: 840px
 
 	button
 		background: none
@@ -36,7 +36,6 @@ body, html
 		text-shadow: none
 		text-transform: uppercase
 		height: 30px
-		margin-top: 5px
 		padding: 0 25px
 
 	.separator
@@ -67,6 +66,7 @@ body, html
 			padding: 20px
 			position: absolute
 			right: 0
+			text-align: left
 			width: 245px
 			z-index: 2
 
@@ -154,6 +154,7 @@ ul.list
 		box-shadow: 0 0 3px #aaa
 		display: inline-block
 		margin-right: 5px
+		position: relative
 		vertical-align: middle
 		width: 16px
 		height: 16px
@@ -163,6 +164,15 @@ ul.list
 		-webkit-transition: all 0.5s linear 0
 		transition: all 0.5s linear 0
 
+		.color-example
+			position: relative
+			width: 16px
+			height: 16px
+			border-radius: 16px
+
+			transition: all 0.5s linear 0
+			transition-property: width, height, border-radius
+
 	.color:hover
 		width: 36px
 		height: 36px
@@ -170,3 +180,7 @@ ul.list
 		margin:
 			top: -10px
 			bottom: -10px
+		.color-example
+			border-radius: 36px
+			width: 36px
+			height: 36px

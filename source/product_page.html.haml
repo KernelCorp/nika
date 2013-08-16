@@ -4,9 +4,9 @@
 .left-product-column
 	%ul#bx-product-gallery
 		%li
-			%img{:src => 'images/main-gallery/stock/bedroom.jpg'}
-		%li
 			%img{:src => 'images/main-gallery/stock/cabinet.jpg'}
+		%li
+			%img{:src => 'images/main-gallery/stock/bedroom.jpg'}
 		%li
 			%img{:src => 'images/main-gallery/stock/wall.jpg'}
 		%li
@@ -16,9 +16,9 @@
 
 	#bx-product-gallery-control
 		%a{:href => '#', 'data-slide-index' => 0}
-			%img{:src => 'images/main-gallery/stock/bedroom.jpg'}
-		%a{:href => '#', 'data-slide-index' => 1}
 			%img{:src => 'images/main-gallery/stock/cabinet.jpg'}
+		%a{:href => '#', 'data-slide-index' => 1}
+			%img{:src => 'images/main-gallery/stock/bedroom.jpg'}
 		%a{:href => '#', 'data-slide-index' => 2}
 			%img{:src => 'images/main-gallery/stock/wall.jpg'}
 		%a{:href => '#', 'data-slide-index' => 3}
@@ -49,9 +49,102 @@
 				%th
 					Цвет
 				%td
-					.color{:style => 'background-color: #000', :title => 'Черный'}
-					.color{:style => 'background-color: #583931', :title => 'Каштан'}
-					.color{:style => 'background-color: #d6bea4', :title => 'Античный белый'}
+					.color
+						.color-example{:style => 'background-color: #000'}
+						.info-block
+							%table
+								%tr
+									%th
+										Ножки:
+									%td
+										Черный
+								%tr
+									%th
+										Ручки:
+									%td
+										Черный
+								%tr
+									%th
+										Массив:
+									%td
+										Черный
+					.color
+						.color-example{:style => 'background-color: #583931'}
+						.info-block
+							%table
+								%tr
+									%th
+										Ножки:
+									%td
+										Коричневый
+								%tr
+									%th
+										Ручки:
+									%td
+										Коричневый
+								%tr
+									%th
+										Массив:
+									%td
+										Коричневый
+					.color
+						.color-example{:style => 'background-color: #d6bea4'}
+						.info-block
+							%table
+								%tr
+									%th
+										Ножки:
+									%td
+										Бежевый
+								%tr
+									%th
+										Ручки:
+									%td
+										Бежевый
+								%tr
+									%th
+										Массив:
+									%td
+										Бежевый
+					.color{:style => 'background-color: #d6bea4'}
+						.info-block
+							%table
+								%tr
+									%th
+										Ножки:
+									%td
+										Коричневый
+								%tr
+									%th
+										Ручки:
+									%td
+										Коричневый
+								%tr
+									%th
+										Массив:
+									%td
+										Бежевый
+						%img{:src => 'images/colors/2-color.png'}
+					.color{:style => 'background-color: #d6bea4'}
+						.info-block
+							%table
+								%tr
+									%th
+										Ножки:
+									%td
+										Коричневый
+								%tr
+									%th
+										Ручки:
+									%td
+										Черный
+								%tr
+									%th
+										Массив:
+									%td
+										Бежевый
+						%img{:src => 'images/colors/3-color.png'}
+
 			%tr
 				%th
 					Ширина
@@ -110,42 +203,48 @@
 	возникает как следствие их выстраивания на основе определенного ряда (модуса).
 
 .additional_block
-	%h4
+	%h5
 		Сопутствующие товары
 	.elem
 		%img{:src => 'images/main-gallery/stock/wall.jpg'}
 		%a{:href =>'#'}
 			Полка “ПН-6”
-		2 600 p.
+		.price
+			2 600 p.
 	.elem
 		%img{:src => 'images/main-gallery/stock/wall.jpg'}
 		%a{:href =>'#'}
 			Полка “ПН-6”
-		2 600 p.
+		.price
+			2 600 p.
 	.elem
 		%img{:src => 'images/main-gallery/stock/wall.jpg'}
 		%a{:href =>'#'}
 			Полка “ПН-6”
-		2 600 p.
+		.price
+			2 600 p.
 
 .additional_block
-	%h4
+	%h5
 		Похожие товары
 	.elem
 		%img{:src => 'images/main-gallery/stock/wall.jpg'}
 		%a{:href =>'#'}
 			Полка “ПН-6”
-		2 600 p.
+		.price
+			2 600 p.
 	.elem
 		%img{:src => 'images/main-gallery/stock/wall.jpg'}
 		%a{:href =>'#'}
 			Полка “ПН-6”
-		2 600 p.
+		.price
+			2 600 p.
 	.elem
 		%img{:src => 'images/main-gallery/stock/wall.jpg'}
 		%a{:href =>'#'}
 			Полка “ПН-6”
-		2 600 p.
+		.price
+			2 600 p.
 
 
 
@@ -153,7 +252,7 @@
 	$(document).ready(function(){
 		$('#bx-product-gallery').bxSlider({
 			controls: false,
-			adaptiveHeight: true,
+			adaptiveHeight: false,
 			pagerCustom: '#bx-product-gallery-control'
 		});
 	});

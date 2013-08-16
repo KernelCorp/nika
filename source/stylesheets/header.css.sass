@@ -33,6 +33,42 @@ i.loupe
 	width: 20px
 	height: 20px
 	display: inline-block
+	position: absolute
+	right: 4px
+	top: 5px
+
+i.man
+	background: url(../images/signed_in_icons.png) -2px -2px no-repeat
+	position: absolute
+	width: 20px
+	height: 20px
+	left: 0
+	top: 0
+
+i.exit
+	background: url(../images/signed_in_icons.png) -22px -2px no-repeat
+	position: absolute
+	width: 20px
+	height: 20px
+	right: 0
+	top: 0
+
+i.down-arrow
+	background: url(../images/icons.png)-40px -30px no-repeat
+	position: absolute
+	width: 15px
+	height: 15px
+	top: 7px
+	right: 0
+
+.signed-in
+	padding-top: 7px
+
+.not-signed-in
+	display: none
+
+#search-head i.loupe.head-loupe
+	top: 3px
 
 .button
 	background-image: linear-gradient(to bottom, #5b6685, #4d5877)
@@ -45,7 +81,16 @@ i.loupe
 	line-height: 20px
 
 
+.with-icon
+	position: relative
+	display: inline-block
 
+.with-icon.left-in
+	padding-left: 20px
+	float: left
+.with-icon.right-in
+	padding-right: 20px
+	float: right
 
 .top-container
 	.left
@@ -65,7 +110,10 @@ i.loupe
 			margin-bottom: 0
 			height: 16px
 		#search-head
+			position: relative
+			padding-right: 30px
 			margin-top: 15px
+			padding-bottom: 3px
 		#order-call
 			margin-bottom: 5px
 			margin-right: 25px
@@ -78,12 +126,17 @@ i.loupe
 			border-top-left-radius: 0
 			-moz-border-radius-topright: 0
 			-webkit-border-top-right-radius: 0
+			i.right-arrow
+				position: absolute
+				top: 0
+				right: 5px
 			li
 				text-align: left
 				font-family: 'Verdana'
 				padding-left: 10px
 				padding-right: 10px
 				a
+					position: relative
 					border-bottom: 1px solid #dbdfeb
 					padding-right: 3px
 					padding-left: 3px
@@ -93,7 +146,7 @@ i.loupe
 					border-bottom-width: 0px
 	.right
 		float: right
-		width: 215px
+		width: 220px
 		text-align: right
 		position: relative
 		i.basket
@@ -120,20 +173,14 @@ i.loupe
 			display: inline
 			margin: 10px 50px 10px 5px
 			padding: 5px
-		li.open
-			border: 1px solid
-			border-color: #dbdfeb #dbdfeb #ffffff #dbdfeb
-			background-color: #ffffff
-			border-top-right-radius: 4px
-			-moz-border-radius-topleft: 4px
-			-webkit-border-top-left-radius: 4px
-			border-top-left-radius: 4px
-			-moz-border-radius-topright: 4px
-			-webkit-border-top-right-radius: 4px
 		a
 			color: #2e3d66
 			font-weight: bold
 			font-size: 13pt
+		a.header-menu.dropdown-toggle
+			position: relative
+			display: inline-block
+			padding-right: 20px
 		li:last-child
 			margin-right: 0
 .bottom-menu-container
@@ -142,6 +189,7 @@ i.loupe
 		top: 130px
 li
 	div.dropdown-menu
+		top: 90%
 		text-align: left
 		padding: 30px
 		left: -168px
@@ -159,4 +207,20 @@ table#dropdown-table
 a.reg
 	display: block
 	float: left
-	margin-left: 40px
+.head
+	background-color: #ffffff
+	position: absolute
+	top: -31px
+	left: 167px
+	width: 130px
+	height: 20px
+	padding: 5px
+	border: 1px solid
+	border-color: #dbdfeb #dbdfeb #ffffff #dbdfeb
+	background-color: #ffffff
+	border-top-right-radius: 4px
+	-moz-border-radius-topleft: 4px
+	-webkit-border-top-left-radius: 4px
+	border-top-left-radius: 4px
+	-moz-border-radius-topright: 4px
+	-webkit-border-top-right-radius: 4px
