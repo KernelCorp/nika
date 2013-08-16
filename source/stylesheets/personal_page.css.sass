@@ -5,14 +5,23 @@
 .page-title
   color: #df44c9
   font:
-    size: 160%
-    weight: bold
+    size: 170%
 
 .bx-change
   background-color: #f3f3f3
   border-radius: 5px
+  padding:
+    top: 5px
+    bottom: 10px
   table.change
     width: 100%
+    height: 100%
+    td
+      height: 70px
+      padding-right: 35px
+    tr td:first-child
+      padding-left: 35px
+      width: 422px
     .field-title
       color: #4e4f4f
       .marked_up
@@ -20,12 +29,26 @@
         color: #dc41c6
         font-size: 80%
     .d-field
-      width: 355px
-      height: 28px
+      text-indent: 10px
+      width: 351px
+      height: 20px
     .send-submit
+      color: #ffffff
+      font:
+        size: 130%
+        weight: bold
+      margin-top: 20px
+      height: 30px
+      width: 200px
       float: right
-      background-image: url('./images/bg-button.png')
+      border-radius: 5px
+      background-color: #5e6989
+      box-shadow: inset 0 0 15px #3f4a68
+
 .bx-title
+  margin-top: 40px
+  margin-bottom: 10px
+  font-size: 170%
   color: #d400b6
 .bx-history
   table.history
@@ -54,16 +77,21 @@
         color: #0083df
         text-align: left
         width: 225px
-        li
+        .l-items
           color: #323746
       td:nth-child(4)
         width: 120px
-        li
-          color: #323746
+        color: #0083df
+        .done
+          color: #d400b6
       td:nth-child(5)
+        font-weight: bold
         width: 120px
       td:nth-child(6)
         width: 125px
       td:nth-child(7)
         width: 90px
+    tbody
+      tr:nth-child(2n-1)
+        background-color: #f3f3f3
 
