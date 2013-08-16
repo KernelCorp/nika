@@ -1,7 +1,8 @@
 i.furn
 	width: 12px
 	height: 10px
-	display: inline-block
+	position: absolute
+	left: 0
 	margin: 10px 5px 10px 0
 	line-height: 15px
 	float: left
@@ -18,7 +19,7 @@ i.chest
 	background: url(../images/small-icons.png) 0px -49px no-repeat
 i.computer
 	background: url(../images/small-icons.png) 0px -73px no-repeat
-i.bad
+i.bed
 	background: url(../images/small-icons.png) 0px -97px no-repeat
 i.kitchen
 	background: url(../images/small-icons.png) 0px -126px no-repeat
@@ -56,6 +57,9 @@ i.spring-bonnel
 	font-size: 12px
 	.tab-content
 		padding: 10px 0 0 10px
+		border-radius: 4px
+		-moz-border-radius: 4px
+		-webkit-border-radius: 4px
 	ul#type-category
 		font-weight: bold
 		font-size: 14px
@@ -70,19 +74,28 @@ i.spring-bonnel
 		margin: 0
 	input#left-search
 		font-family: 'Verdana'
-		width: 135px
+		width: 120px
 		color: #a0a1a1
 		float: left
 		display: inline
 	button#left-search
 		padding: 5px 0 0 0
 		width: 30px
-		height: 30px
-	ul#furniture-list
+		height: 29px
+		margin-top: 1px
+		margin-left: 10px
+		position: relative
+	ul#furniture-list, ul#furniture-list-second
 		margin-left: 0
 		list-style-type: none
 		li
 			line-height: 30px
 			text-align: left
+			height: auto
+			a
+				position: relative
+				display: inline-block
+				padding-left: 20px
+
 .left-column li.active a, .left-column .tab-content
 	background-color: #f3f3f3
