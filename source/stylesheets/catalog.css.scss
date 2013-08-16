@@ -122,17 +122,17 @@ $color-dark-blue: #2e3d66;
 					font-size: 17px;
 					font-style: italic;
 					font-weight: bold;
-					width: 40%;
+					width: 60%;
 					@include only-object;
 				}
-				a {
-					width: auto;
+				a.question {
+					width: 50%;
 					&:hover {
 						text-decoration: none;
 					}
 				}
 				.buy {
-					width: 40%;
+					width: 58px;
 					text-transform: uppercase;
 					font-style: normal;
 					color: $color-white;

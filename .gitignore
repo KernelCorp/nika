@@ -17,5 +17,5 @@
 /Gemfile.lock
 
 # Anti Vim
-/.swp
-/.orig
+*.swp
+*.orig

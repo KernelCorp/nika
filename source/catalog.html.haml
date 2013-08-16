@@ -20,8 +20,8 @@
             %img{:src => "http://placekitten.com/30/80"}
         %img{:src => "http://placekitten.com/150/125"}
       %div.spanner
-        %p.price 100500 р.
-        %a{:href => "javascript:function(){ return false; }"} ?
+        %p.price 10500 р.
+        %a.question{:href => "javascript:function(){ return false; }"} ?
         %a.buy.button{:href => "javascript:function(){ return false; }"}
           Купить
   %div.paginator-wrapper
@@ -40,4 +40,4 @@
         %a{:href => "javascript:function(){ return false; }"} &gt;
       %li 
         %a{:href => "javascript:function(){ return false; }"} &gt;&gt;
-
+= javascript_include_tag 'popup-product'
