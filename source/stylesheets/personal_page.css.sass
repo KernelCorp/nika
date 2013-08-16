@@ -1,131 +1,187 @@
 .content
-  text-align: left
-  height: 1300px
+	text-align: left
 
 .page-title
-  color: #df44c9
-  font:
-    size: 170%
+	color: #df44c9
+	font:
+		size: 170%
 
 .bx-change
-  margin-top: 13px
-  background-color: #f3f3f3
-  border-radius: 5px
-  padding:
-    top: 5px
-    bottom: 10px
-  table.change
-    width: 100%
-    height: 100%
-    td
-      height: 70px
-      padding-right: 35px
-    tr td:first-child
-      padding-left: 35px
-      width: 422px
-    .field-title
-      text-indent: 5px
-      color: #4e4f4f
-      .marked_up
-        display: inline
-        color: #dc41c6
-        font-size: 80%
-    .d-field
-      text-indent: 10px
-      width: 351px
-      height: 20px
-    .send-submit
-      border: none
-      color: #ffffff
-      font:
-        size: 130%
-        weight: bold
-      margin-top: 20px
-      height: 30px
-      width: 200px
-      float: right
-      border-radius: 5px
-      background-color: #5e6989
-      box-shadow: inset 0 0 15px #3f4a68
+	margin-top: 13px
+	background-color: #f3f3f3
+	border-radius: 5px
+	padding:
+		top: 5px
+		bottom: 10px
+	table.change
+		width: 100%
+		height: 100%
+		td
+			height: 70px
+			padding-right: 35px
+		tr td:first-child
+			padding-left: 35px
+			width: 422px
+		.field-title
+			text-indent: 5px
+			color: #4e4f4f
+			.marked_up
+				display: inline
+				color: #dc41c6
+				font-size: 80%
+		.d-field
+			text-indent: 10px
+			width: 351px
+			height: 20px
+		.send-submit
+			margin-top: 20px
+			height: 30px
+			width: 200px
+			float: right
+			text-transform: uppercase
+
+a.page
+	position: relative
+	display: inline-block
+	padding-right: 20px
+	margin-right: 20px
+i.page
+	background: url(../images/personal-icons.png) -15px -3px no-repeat
+	height: 15px
+	width: 15px
+	right: 0
+	top: 3px
+	position: absolute
 
 .bx-title
-  margin-top: 40px
-  margin-bottom: 10px
-  font:
-    size: 140%
-    weight: bold
-  color: #d400b6
+	margin-top: 40px
+	margin-bottom: 10px
+	font:
+		size: 140%
+		weight: bold
+	color: #d400b6
 .bx-history
-  table.history
-    thead tr th
-      padding-left: 5px
-    thead
-      th:nth-child(1)
-        width: 60px
-      th:nth-child(2)
-        width: 105px
-      th:nth-child(3)
-        width: 225px
-      th:nth-child(4)
-        width: 120px
-      th:nth-child(5)
-        width: 120px
-      th:nth-child(6)
-        width: 125px
-      th:nth-child(7)
-        width: 90px
-    tbody tr
-      border-radius: 3px
-      td:nth-child(1)
-        width: 60px
-      td:nth-child(2)
-        width: 105px
-      td:nth-child(3)
-        .decor-line
-          margin-top: -4px
-          width: 93px
-          height: 1px
-          border-bottom: 2px dotted #88c2ea
-        color: #0083df
-        text-align: left
-        width: 225px
-        .l-items
-          display: none
-      td:nth-child(4)
-        width: 120px
-        color: #0083df
-        .l-count
-          display: none
-          text-align: right
-          color: #323746
-      td.done
-        color: #d400b6
-      td:nth-child(5)
-        font-weight: bold
-        width: 120px
-        .l-sum
-          display: none
-          text-align: right
-          color: #323746
-      td:nth-child(6)
-        width: 125px
-      td:nth-child(7)
-        text-align: center
-        font:
-          size: 180%
-          weight: bold
-        color: #5b6686
-        width: 90px
-    tbody
-      tr:nth-child(2n-1)
-        background-color: #f3f3f3
-    tbody tr td
-      vertical-align: top
-      padding: 5px
-    tbody tr
-      td:nth-child(3):hover
-        cursor: pointer
+	table.history
+		thead tr th
+			padding-left: 5px
+			text-align: center
+		thead
+			th:nth-child(1)
+				width: 60px
+			th:nth-child(2)
+				width: 105px
+			th:nth-child(3)
+				width: 205px
+			th:nth-child(4)
+				width: 120px
+			th:nth-child(5)
+				width: 120px
+			th:nth-child(6)
+				width: 165px
+			th:nth-child(7)
+				width: 90px
+		tbody tr
+			border-radius: 3px
+			td
+				text-align: right
+			td:nth-child(1)
+				width: 60px
+			td:nth-child(2)
+				width: 105px
+			td:nth-child(3)
+				.decor-line
+					margin-top: -4px
+					width: 93px
+					height: 1px
+					border-bottom: 2px dotted #88c2ea
+				color: #0083df
+				text-align: left
+				width: 205px
+				.l-items
+					display: none
+			td:nth-child(4)
+				width: 120px
+				color: #0083df
+				.l-count
+					display: none
+					text-align: right
+					color: #323746
+			td:last-child
+				a
+					color: #5b6686
+				a:hover
+					text-decoration: none
+					color: #d400b6
+			td.done
+				color: #d400b6
+			td:nth-child(5)
+				font-weight: bold
+				width: 120px
+				.l-sum
+					display: none
+					text-align: right
+					color: #323746
+			td:nth-child(6)
+				width: 165px
+			td:nth-child(7)
+				text-align: center
+				font:
+					size: 180%
+					weight: bold
+				color: #5b6686
+				width: 90px
+		tbody
+			tr:nth-child(2n-1)
+				background-color: #f3f3f3
+		tbody tr td
+			vertical-align: top
+			padding: 5px
+		tbody tr
+			td:nth-child(3):hover
+				cursor: pointer
 
 .bx-questions
-  background-color: #f3f3f3
-  border-radius: 5px
+	hr
+		border-bottom: none
+		border-top: 1px solid #d3d3d3
+		margin: 10px 0 10px 0
+	hr.full-width
+		width: 840px
+		margin-left: -34px
+	.q-title
+		margin-bottom: 20px
+		.author
+			float: left
+		.date
+			float: right
+			font-weight: bold
+			color: #7d7d7d
+		.files
+			float: right
+	.q-body
+		margin-top: 15px
+		color: #7d7d7d
+	a.attach
+		position: relative
+		display: inline-block
+		padding-right: 20px
+		margin-right: 20px
+
+	i.attach
+		background: url(../images/personal-icons.png) 0px -3px no-repeat
+		height: 15px
+		width: 13px
+		right: 0px
+		top: 3px
+		position: absolute
+
+
+	textarea.question-text
+		width: 759px
+		height: 130px
+		resize: none
+	#submit-question
+		float: right
+	background-color: #f3f3f3
+	border-radius: 5px
+	padding: 20px 34px 20px 34px
