@@ -1,0 +1,159 @@
+%link{:rel => 'stylesheet', :type => 'text/css', :href => 'stylesheets/jquery.bxslider.css'}
+%link{:rel => 'stylesheet', :type => 'text/css', :href => 'stylesheets/product_page.css'}
+
+.left-product-column
+	%ul#bx-product-gallery
+		%li
+			%img{:src => 'images/main-gallery/stock/bedroom.jpg'}
+		%li
+			%img{:src => 'images/main-gallery/stock/cabinet.jpg'}
+		%li
+			%img{:src => 'images/main-gallery/stock/wall.jpg'}
+		%li
+			%img{:src => 'images/main-gallery/stock/cabinet.jpg'}
+		%li
+			%img{:src => 'images/main-gallery/stock/wall.jpg'}
+
+	#bx-product-gallery-control
+		%a{:href => '#', 'data-slide-index' => 0}
+			%img{:src => 'images/main-gallery/stock/bedroom.jpg'}
+		%a{:href => '#', 'data-slide-index' => 1}
+			%img{:src => 'images/main-gallery/stock/cabinet.jpg'}
+		%a{:href => '#', 'data-slide-index' => 2}
+			%img{:src => 'images/main-gallery/stock/wall.jpg'}
+		%a{:href => '#', 'data-slide-index' => 3}
+			%img{:src => 'images/main-gallery/stock/cabinet.jpg'}
+		%a{:href => '#', 'data-slide-index' => 4}
+			%img{:src => 'images/main-gallery/stock/wall.jpg'}
+
+
+
+
+.right-product-column
+	%h1
+		Комод Модерн
+	%table.furniture_info
+		%tbody
+			%tr
+				%th
+					Производитель
+				%td
+					%a{:href => '#'}
+						“Фабрика мебели”, г. Бийск
+			%tr
+				%th
+					Артикул
+				%td
+					673849512
+			%tr
+				%th
+					Цвет
+				%td
+					.color{:style => 'background-color: #000', :title => 'Черный'}
+					.color{:style => 'background-color: #583931', :title => 'Каштан'}
+					.color{:style => 'background-color: #d6bea4', :title => 'Античный белый'}
+			%tr
+				%th
+					Ширина
+				%td
+					3000 мм.
+
+			%tr
+				%th
+					Высота
+				%td
+					2000 мм.
+			%tr
+				%th
+					Глубина
+				%td
+					560 мм.
+			%tr
+				%th
+					Материал
+				%td
+					ЛДСП, ПВХ
+			%tr
+				%th
+					Остаток
+				%td
+					.product_field
+						.product_count{:style => "width: #{9 * 6}px"}
+					есть на складе
+
+	%table.price-table
+		%tr
+			%td.city
+				Розничная цена в
+				Новосибирске
+			%td.price
+				32 000
+				р.
+				%i.icon-info
+					%a.info{:href=>'javascript:void(0);', :tabindex => 1}
+						?
+					.information
+						Указана <b>рекомендованная</b> розничная цена в
+						Новосибирске
+						.separator
+						Для того, чтобы увидеть оптовые цены вам необходимо
+						%a{:href =>'#'}
+							зарегистрироваться
+			%td
+				%button
+					Купить
+
+%p
+	Хорус, следовательно, полифигурно иллюстрирует звукорядный рок-н-ролл 50-х,
+	таким образом конструктивное состояние всей музыкальной ткани или какой-либо из
+	составляющих ее субструктур (в том числе: временнoй, гармонической, динамической, тембровой, темповой)
+	возникает как следствие их выстраивания на основе определенного ряда (модуса).
+
+.additional_block
+	%h4
+		Сопутствующие товары
+	.elem
+		%img{:src => 'images/main-gallery/stock/wall.jpg'}
+		%a{:href =>'#'}
+			Полка “ПН-6”
+		2 600 p.
+	.elem
+		%img{:src => 'images/main-gallery/stock/wall.jpg'}
+		%a{:href =>'#'}
+			Полка “ПН-6”
+		2 600 p.
+	.elem
+		%img{:src => 'images/main-gallery/stock/wall.jpg'}
+		%a{:href =>'#'}
+			Полка “ПН-6”
+		2 600 p.
+
+.additional_block
+	%h4
+		Похожие товары
+	.elem
+		%img{:src => 'images/main-gallery/stock/wall.jpg'}
+		%a{:href =>'#'}
+			Полка “ПН-6”
+		2 600 p.
+	.elem
+		%img{:src => 'images/main-gallery/stock/wall.jpg'}
+		%a{:href =>'#'}
+			Полка “ПН-6”
+		2 600 p.
+	.elem
+		%img{:src => 'images/main-gallery/stock/wall.jpg'}
+		%a{:href =>'#'}
+			Полка “ПН-6”
+		2 600 p.
+
+
+
+:javascript
+	$(document).ready(function(){
+		$('#bx-product-gallery').bxSlider({
+			controls: false,
+			adaptiveHeight: true,
+			pagerCustom: '#bx-product-gallery-control'
+		});
+	});
