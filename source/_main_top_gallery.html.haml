@@ -2,7 +2,8 @@
 	.header-content
 		.top-container
 			.left
-				%img.logo{:src => './images/logo.png'}
+				%a{:href => '/'}
+					%img.logo{:src => './images/logo.png'}
 			.right
 				%i{:class=>'basket'}
 				%p
@@ -23,8 +24,11 @@
 				%span{:class => 'number-code'} +7 (383)
 				%span{:class => 'number'} 25-10-100
 				%br
-				%input#search{:type => 'text', 'data-provide' => 'typeahead'}
-				%input{:type => 'button', :class => 'head-button button', :id=> 'search-head', :value => "Найти"}
+				%form#head-search
+					%input#search{:type => 'text', 'data-provide' => 'typeahead'}
+					%button{:type => 'submit', :class => 'head-button button', :id=> 'search-head'}
+						найти
+						%i.loupe.head-loupe
 		.bottom-menu-container
 			%ul.header-menu
 				%li
@@ -139,6 +143,10 @@
 				%li
 					%a.header-menu{:href => '#'}
 						Контакты
+			.kazah
+				%a.normal{:href => '#'}
+					%i.kazah
+					Каз
 
 
 	.top-gallery
