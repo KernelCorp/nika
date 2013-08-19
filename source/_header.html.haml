@@ -1,3 +1,25 @@
+.white_fon
+.popover_block.user_callback
+	%img.close-button{:src => 'images/close.png'}
+	%form.form
+		.background
+			%fieldset
+				%legend
+					Обратный звонок
+				%label{:for => 'user_fio'}
+					ФИО<sup>*<sup>
+				%input{:id => 'user_fio', :type	=> 'text'}
+
+				%label{:for => 'phone'}
+					Телефон<sup>*<sup>
+				%input{:id => 'phone', :type	=> 'text'}
+
+				%label{:for => 'message'}
+					Комментарий
+				%textarea{:id => 'message'}
+				%input{:type => 'submit', :value => 'Заказать', :class => 'right'}
+
+
 %header
 	.header-content
 		.top-container
@@ -27,7 +49,7 @@
 						Выход
 						%i.exit
 			.middle
-				%input{:type => 'button', :class => 'head-button button', :id=> 'order-call', :value => 'Заказать звонок'}
+				%input{:type => 'button', :class => 'head-button button', :id=> 'callback_request', :value => 'Заказать звонок'}
 				%span{:class => 'number-code'} +7 (383)
 				%span{:class => 'number'} 25-10-100
 				%br
