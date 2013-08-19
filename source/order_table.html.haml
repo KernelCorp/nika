@@ -1,6 +1,5 @@
-%link{:rel => 'stylesheet', :type => 'text/css', :href => 'stylesheets/basket.css'}
 .basket
-	%h3
+	%h1
 		Ваш заказ
 
 	%table.basket_elem
@@ -107,13 +106,14 @@
 				%td.center
 					1
 
-	%table.total.right-space
-		%thead
-			%tr
-				%th.center
-					Общая стоимость заказа:
-		%tbody
-			%tr
-				%td.center
-					32 000 р.
-	%input{:type => 'submit', :class => 'btn submit', :value => 'подтвердить заказ'}
+	.right
+		%table.total.right-space
+			%thead
+				%tr
+					%th.center
+						Общая стоимость заказа:
+			%tbody
+				%tr
+					%td.center
+						32 000 р.
+		%input{:type => 'submit', :class => 'btn submit', :value => 'подтвердить заказ'}

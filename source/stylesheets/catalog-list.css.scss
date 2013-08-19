@@ -2,7 +2,7 @@ $color-blue: #0083df;
 $color-pink: #d400b6;
 $color-grey: #c8c8c8;
 $color-light-grey: #f3f3f3;
-$color-black: #000;
+$color-black: #424343;
 $color-white: #fff;
 $color-dark-blue: #2e3d66;
 
@@ -12,8 +12,6 @@ $color-dark-blue: #2e3d66;
 }
 
 .right-container {
-	font-family: Arial;
-	text-align: left;
 	> h2 {
 		font-size: 23px;
 		line-height: 20px;
@@ -83,7 +81,7 @@ $color-dark-blue: #2e3d66;
 		margin: 30px auto;
 		width: 790px;
 		display: block;
-		> .product {
+		> .product-by-list {
 			padding: 18px 190px 20px 200px;
 			position: relative;
 			box-sizing: border-box;
@@ -96,6 +94,7 @@ $color-dark-blue: #2e3d66;
 			text-align: center;
 			min-height: 190px;
 			h2 {
+				font-family: Verdana, sans-serif;
 				font-size: 15px;
 				line-height: 20px;
 				color: $color-black;
@@ -113,8 +112,8 @@ $color-dark-blue: #2e3d66;
 			.description {
 				padding-top: 25px;
 				text-align: left;
-				font-size: 18px;
-				line-height: 28px;
+				font-size: 15px;
+				line-height: 25px;
 			}
 			.image {
 				position: absolute;
@@ -170,11 +169,17 @@ $color-dark-blue: #2e3d66;
 							text-decoration: none;
 						}
 					}
+					.price {
+						font-family: OpenSans-BoldItalic;
+						font-size: 19px;
+					}
 				}
 				.buy {
 					width: 80px;
 					font-size: 20px;
 					text-transform: uppercase;
+					font-family: opensans-semibold;
+					font-size: 15px;
 					font-style: normal;
 					font-weight: bold;
 					color: $color-white;
