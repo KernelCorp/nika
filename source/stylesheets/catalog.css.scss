@@ -106,6 +106,10 @@ $color-dark-blue: #2e3d66;
 				color: $color-pink;
 				text-align: center;
 				@include only-object;
+				font-size: 12px;
+				b {
+					font-size: 12px;
+				}
 			}
 			.image {
 				position: relative;
@@ -169,8 +173,9 @@ $color-dark-blue: #2e3d66;
 					font-size: 15px;
 					font-style: normal;
 					font-weight: normal;
+					text-align: center;
 					color: $color-white;
-					padding: 5px 10px;
+					padding: 2px 10px 4px;
 				}
 			}
 		}
