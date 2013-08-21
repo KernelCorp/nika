@@ -1,11 +1,9 @@
 i.furn
 	width: 12px
 	height: 10px
-	position: absolute
-	left: 0
-	margin: 10px 5px 10px 0
-	line-height: 15px
-	float: left
+	display: inline-block
+	margin-left: -20px
+	margin-right: 5px
 .name-container
 	float: right
 	width: 170px
@@ -56,6 +54,8 @@ i.spring-bonnel
 	vertical-align: top
 	font-family: 'Verdana'
 	font-size: 13px
+	.left-column-content
+		padding-top: 40px
 	.tab-content
 		padding: 10px 0 0 10px
 		border-radius: 4px
@@ -80,7 +80,7 @@ i.spring-bonnel
 		float: left
 		display: inline
 	button#left-search
-		padding: 5px 0 0 0
+		padding: 0
 		width: 30px
 		height: 29px
 		margin-top: 1px
@@ -88,9 +88,10 @@ i.spring-bonnel
 		position: relative
 	ul#furniture-list, ul#furniture-list-second
 		margin-left: 0
+		margin-right: 15px
 		list-style-type: none
 		li
-			line-height: 30px
+			line-height: 24px
 			text-align: left
 			height: auto
 			a

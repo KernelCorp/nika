@@ -1,8 +1,8 @@
 %script{:type => 'text/javascript', :src => 'javascripts/detalizer.js'}
-.page-title
+%h1
 	Личный кабинет
 .bx-change
-	%form
+	%form.form
 		%table.change
 			%tr
 				%td
@@ -52,7 +52,7 @@
 							*
 						поля отмеченные звездочкой являются обязательными для заполнения
 					%input.send-submit.button{type:'submit', name:'Submit', value:'изменить данные'}
-.bx-title
+%h2
 	История заказов
 .bx-history
 	%table.history
@@ -413,17 +413,19 @@
 				%td
 					%a{:href => '#'}
 						+
-.bx-title
+%h2
 	Задать вопрос
 .bx-questions
-	%form
-		текст вопроса:
+	%form.form
+		%label
+			текст вопроса:
 		%textarea.question-text{type:'text'}
 		%input.button#submit-question{type:'submit', name:'send', value:'отправить'}
 	.add-file-link
-		%a.attach{href:'#'}
+		%label.attach{:for => 'attach_file'}
 			Прикрепить файл
 			%i.attach
+		%input{:type => 'file', :id => 'attach_file', :value => ''}
 	.l-questions
 		.l-title
 			%hr.full-width

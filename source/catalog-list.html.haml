@@ -1,55 +1,60 @@
-%h2 Котята трансформеры
+%h2
+	Детская мебель
 %div.view
-  %p Вид:
-  %a.cubes{:href => "javascript:function(){ return false;}"} Плиткой
-  %a.active.list{:href => "javascript:function(){ return false;}"} Списком
-  %a{:href => "javascript:function(){ return false;}"} Показать все
+	%p Вид:
+	%a.cubes{:href => "javascript:function(){ return false;}"} Плиткой
+	%a.active.list{:href => "javascript:function(){ return false;}"} Списком
+	%a{:href => "javascript:function(){ return false;}"} Показать все
 %div.products
-  - 1.upto(6).each do
-    %div.product-by-list
-      %h2 Детская "Глобус 2"
-      %p
-        Артикул
-        %b
-          673849512
-      %div.description
-        Something to post there, text and so on
-        Something to post there, text and so on
-        Something to post there, text and so on
-        Something to post there, text and so on
-      %div.image
-        // it's for centring image
-        %div
-          %div
-            %img{:src => "images/action.png"}
-        %img{:src => "images/stock.jpg"}
-      %div.spanner
-        %div
-          %p.price 10 500 p.
-          %i.icon-info
-            %a.info{:href => "javascript:function(){ return false; }", :tabindex=> 1} ?
-            .information
-              Указана <b>рекомендованная</b> розничная цена в
-              Новосибирске
-              .separator
-              Для того, чтобы увидеть оптовые цены вам необходимо
-              %a{:href =>'#'}
-                зарегистрироваться
-        %a.buy.button{:href => "javascript:function(){ return false; }"}
-          Купить
-  %div.paginator-wrapper
-    %ul.paginator
-      %li.quotes
-        %a{:href => "javascript:function(){ return false; }"} &lt;&lt;
-      %li.quotes
-        %a{:href => "javascript:function(){ return false; }"} &lt;
-      %li 
-        %a{:href => "javascript:function(){ return false; }"} 1
-      %li 
-        %a{:href => "javascript:function(){ return false; }"} 2
-      %li 
-        %a{:href => "javascript:function(){ return false; }"} 3
-      %li.quotes
-        %a{:href => "javascript:function(){ return false; }"} &gt;
-      %li.quotes
-        %a{:href => "javascript:function(){ return false; }"} &gt;&gt;
+	- 1.upto(6).each do |i|
+		.product-by-list
+			%h2 Детская "Глобус 2"
+			%p.marking
+				Артикул
+				%b
+					673849512
+			%div.description
+				Something to post there, text and so on
+				Something to post there, text and so on
+				Something to post there, text and so on
+				Something to post there, text and so on
+			%div.image
+				// it's for centring image
+				%div.wrap
+					%div.left-div
+						- if i == 6 || i == 2
+							%img{:src => "images/action.png"}
+						- if i == 1 || i == 5
+							%img{:src => "images/hit.png"}
+				%img{:src => "images/stock.jpg"}
+			%div.spanner
+				.price
+					10 500 p.
+					%i.icon-info
+						%a.info{:href => "javascript:function(){ return false; }", :tabindex=> 1,
+							:title => 'Нажмите для получения подробной информации'} ?
+						.information
+							Указана <b>рекомендованная</b> розничная цена в
+							Новосибирске
+							.separator
+							Для того, чтобы увидеть оптовые цены вам необходимо
+							%a{:href =>'#'}
+								зарегистрироваться
+				%a.buy.button{:href => "javascript:function(){ return false; }"}
+					Купить
+	%div.paginator-wrapper
+		%ul.paginator
+			%li.quotes
+				%a{:href => "javascript:function(){ return false; }"} &lt;&lt;
+			%li.quotes
+				%a{:href => "javascript:function(){ return false; }"} &lt;
+			%li
+				%a{:href => "javascript:function(){ return false; }"} 1
+			%li
+				%a{:href => "javascript:function(){ return false; }"} 2
+			%li
+				%a{:href => "javascript:function(){ return false; }"} 3
+			%li.quotes
+				%a{:href => "javascript:function(){ return false; }"} &gt;
+			%li.quotes
+				%a{:href => "javascript:function(){ return false; }"} &gt;&gt;

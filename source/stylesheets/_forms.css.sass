@@ -1,7 +1,8 @@
+.narrow
+	width: 434px
 
 .form
 	font-family: Verdana, OpenSans-semibold, sans-serif
-	width: 434px
 
 	.background
 		background-color: #f3f3f3
@@ -14,8 +15,12 @@
 	input,
 	textarea
 		border: none
+		-moz-box-sizing: border-box
+		-webkit-box-sizing: border-box
 		box-sizing: border-box
 		box-shadow: 0 1px 5px #aaa
+		font-size: 15px
+		line-height: 15px
 		height: 28px
 		width: 100%
 
@@ -23,6 +28,7 @@
 		height: 135px
 
 	input[type='submit']
+		background-image: none
 		background-color: #5f6a8a
 		border: none
 		border-top: 2px solid #67708b
@@ -39,5 +45,5 @@
 		text-transform: uppercase
 		height: 30px
 		margin-top: 25px
-		padding: 0 25px
+		padding: 0 25px 2px
 		width: auto

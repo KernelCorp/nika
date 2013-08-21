@@ -1,119 +1,43 @@
 .basket
 	%h1
 		Ваш заказ
+	%form.form
+		-1.upto(4) do |i|
+			%table.basket_elem
+				%thead
+					%tr
+						%th.center
+							фото
+						%th
+							название
+						%th
+							артикул
+						%th
+							цена
+						%th.center
+							кол-во
+				%tbody
+					%tr
+						%td.center
+							%img{:src => 'images/small/stock.jpg'}
+						%td
+							Детская "Глобус #{i}"
+						%td
+							67838495#{i}2
+						%td
+							32 #{i}00 р.
+						%td.center
+							1
 
-	%table.basket_elem
-		%thead
-			%tr
-				%th.center
-					Фото
-				%th
-					Название
-				%th
-					Артикул
-				%th
-					Цена
-				%th.center
-					Кол-во
-		%tbody
-			%tr
-				%td.center
-					%img{:src => 'images/small/stock.jpg'}
-				%td
-					Детская "Глобус 2"
-				%td
-					6783849512
-				%td
-					32 000 р.
-				%td.center
-					1
 
-	%table.basket_elem
-		%thead
-			%tr
-				%th.center
-					Фото
-				%th
-					Название
-				%th
-					Артикул
-				%th
-					Цена
-				%th.center
-					Кол-во
-		%tbody
-			%tr
-				%td.center
-					%img{:src => 'images/small/stock.jpg'}
-				%td
-					Детская "Глобус 2"
-				%td
-					6783849512
-				%td
-					32 000 р.
-				%td.center
-					1
-
-	%table.basket_elem
-		%thead
-			%tr
-				%th.center
-					Фото
-				%th
-					Название
-				%th
-					Артикул
-				%th
-					Цена
-				%th.center
-					Кол-во
-		%tbody
-			%tr
-				%td.center
-					%img{:src => 'images/small/stock.jpg'}
-				%td
-					Детская "Глобус 2"
-				%td
-					6783849512
-				%td
-					32 000 р.
-				%td.center
-					1
-
-	%table.basket_elem
-		%thead
-			%tr
-				%th.center
-					Фото
-				%th
-					Название
-				%th
-					Артикул
-				%th
-					Цена
-				%th.center
-					Кол-во
-		%tbody
-			%tr
-				%td.center
-					%img{:src => 'images/small/stock.jpg'}
-				%td
-					Детская "Глобус 2"
-				%td
-					6783849512
-				%td
-					32 000 р.
-				%td.center
-					1
-
-	.right
-		%table.total.right-space
-			%thead
-				%tr
-					%th.center
-						Общая стоимость заказа:
-			%tbody
-				%tr
-					%td.center
-						32 000 р.
-		%input{:type => 'submit', :class => 'btn submit', :value => 'подтвердить заказ'}
+		.right
+			%table.total.right-space
+				%thead
+					%tr
+						%th.center
+							общая стоимость заказа:
+				%tbody
+					%tr
+						%td.center
+							128 000 р.
+			%input{:type => 'submit', :class => 'btn submit', :value => 'подтвердить заказ'}

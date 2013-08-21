@@ -12,12 +12,6 @@ $color-dark-blue: #2e3d66;
 }
 
 .right-container {
-	> h2 {
-		font-size: 23px;
-		line-height: 20px;
-		font-weight: normal;
-		color: $color-pink;
-	}
 	a {
 		color: $color-blue;
 		text-decoration: none;
@@ -77,11 +71,11 @@ $color-dark-blue: #2e3d66;
 			}
 		}
 	}
-	> .products {
+	.products {
 		margin: 30px auto;
 		width: 790px;
 		display: block;
-		> .product-by-list {
+		.product-by-list {
 			padding: 18px 190px 20px 200px;
 			position: relative;
 			box-sizing: border-box;
@@ -96,13 +90,14 @@ $color-dark-blue: #2e3d66;
 			h2 {
 				font-family: Verdana, sans-serif;
 				font-size: 15px;
+				font-weight: bold;
 				line-height: 20px;
 				color: $color-black;
 				@include only-object;
 				display: inline-block;
 				float: left;
 			}
-			> p {
+			p.marking {
 				color: $color-pink;
 				text-align: center;
 				display: inline-block;
@@ -121,12 +116,12 @@ $color-dark-blue: #2e3d66;
 				left: 0;
 				width: 200px;
 				margin: 10px 0;
-				> div {
+				div.wrap {
 					position: absolute;
 					left: 0px;
 					width: 30px;
 					height: 100%;
-					div {
+					div.left-div {
 						display: table-cell;
 						height: 130px;
 						vertical-align: middle;
@@ -146,17 +141,6 @@ $color-dark-blue: #2e3d66;
 				height: 90px;
 				font-size: 18px;
 				line-height: 28px;
-				> div {
-					padding-bottom: 30px;
-				}
-				> div > * {
-					display: inline-block;
-					color: $color-dark-blue;
-					font-size: 20px;
-					font-style: italic;
-					font-weight: bold;
-					@include only-object;
-				}
 				i.icon-info {
 					padding-right: 2px;
 					position: relative;
@@ -169,10 +153,14 @@ $color-dark-blue: #2e3d66;
 							text-decoration: none;
 						}
 					}
-					.price {
-						font-family: OpenSans-BoldItalic;
-						font-size: 19px;
-					}
+				}
+				.price {
+					color: $color-dark-blue;
+					font-family: OpenSans-BoldItalic;
+					font-weight: normal;
+					font-style: normal;
+					font-size: 19px;
+					margin-bottom: 20px;
 				}
 				.buy {
 					width: 80px;
@@ -184,25 +172,6 @@ $color-dark-blue: #2e3d66;
 					font-weight: bold;
 					color: $color-white;
 					padding: 5px 12px;
-				}
-			}
-		}
-		> .paginator-wrapper {
-			width: 100%;
-			text-align: center;
-			.paginator {
-				list-style: none;
-				display: inline;
-				margin: 0 auto;
-				li {
-					font-weight: bold;
-					display: inline;
-					&.quotes a {
-						color: $color-dark-blue;
-						&:hover {
-							color: $color-pink;
-						}
-					}
 				}
 			}
 		}

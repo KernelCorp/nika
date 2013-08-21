@@ -5,32 +5,44 @@
 	box-shadow: 0 0 10px #aaa
 	display: inline-block
 	height: 400px
-	margin: 20px 0 10px 0
+	margin: 40px 0 10px 0
 	vertical-align: top
 	width: 405px
+
+	.bx-wrapper
+		padding: 0 0 1px 0
+
 
 	#bx-product-gallery
 
 		img
+			border-radius: 5px 5px 0 0
 			width: 405px
 			height: 303px
 
 	#bx-product-gallery-control
-		margin-top: 50px
+		margin-top: -15px
 		text-align: center
 		a
 			border-radius: 5px
 			display: inline-block
-			margin: 4px 1px
+			margin: 4px 0
 			height: 72px
 			width: 72px
 
 			img
+				border-radius: 5px
 				width: 100%
 				height: 100%
 
 		a:hover
 			text-decoration: none
+
+		a.active img
+			-o-box-shadow: 0 0 5px #444
+			-moz-box-shadow: 0 0 5px #444
+			-webkit-box-shadow: 0 0 5px #444
+			box-shadow: 0 0 5px #444
 
 
 .right-product-column
@@ -38,7 +50,7 @@
 	height: 400px
 	margin-left: 20px
 	vertical-align: top
-	width: 410px
+	width: 400px
 
 	.furniture_info
 		width: 100%
@@ -68,10 +80,10 @@
 				width:  0px
 				z-index: 2
 
-				-o-transition: all 0.5s linear 0
-				-moz-transition: all 0.5s linear 0
-				-webkit-transition: all 0.5s linear 0
-				transition: all 0.5s linear 0
+				-o-transition: all 0.5s linear 0s
+				-moz-transition: all 0.5s linear 0s
+				-webkit-transition: all 0.5s linear 0s
+				transition: all 0.5s linear 0s
 
 				table
 					tr:nth-child(odd)
@@ -131,19 +143,22 @@ p
 	box-shadow: 0 0 8px #aaa
 	display: inline-block
 	font-family: Verdana, sans-serif
+	margin-top: 15px
 	margin-right: 20px
-	padding: 10px
-	width: 370px
+	padding: 10px 16px
+	width: 362px
 
 	h5
 		font-size: 15px
+		margin-left: 10px
 
 	.elem
 		display: inline-block
 		margin: 0
+		margin-right: 10px
 		text-align: center
 		vertical-align: top
-		width: 120px
+		width: 110px
 		img
 			border-radius: 5px
 			display: block
@@ -152,3 +167,9 @@ p
 			width: 72px
 		.price
 			font-weight: bold
+
+	.elem:last-child
+		margin-right: 0
+
+.additional_block:last-child
+	margin-right: 0
