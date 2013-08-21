@@ -13,12 +13,11 @@ header
 	height: 135px
 	margin: 0 auto
 i.right-arrow
-	background: url(../images/icons.png) -5px -3px no-repeat
+	background: url(../images/icons.png) -1px -3px no-repeat
 	width: 10px
 	height: 10px
 	display: inline-block
-	margin-top: 8px
-	margin-left: 5px
+	margin-top: 0
 
 i.plus
 	background: url(../images/icons.png) -124px -3px no-repeat
@@ -26,14 +25,13 @@ i.plus
 	height: 10px
 	display: inline-block
 	margin-top: 8px
-	margin-left: 5px
 
 i.loupe
 	background: url(../images/icons.png) -16px -2px no-repeat
 	width: 20px
 	height: 20px
 	display: inline-block
-	position: absolute
+	vertical-align: middle
 	right: 4px
 	top: 5px
 
@@ -91,14 +89,16 @@ div.kazah
 	top: 3px
 
 .button
+	background-color: #5b6685
 	background-image: linear-gradient(to bottom, #5b6685, #4d5877)
-	box-shadow: 0px 0px 10px #e2e2e2, 0px -1px #4d5877
 	border-width: 0px
+	border-top: 2px solid #67708c
 	border-radius: 4px
 	color: #ffffff
 	font-size: 11pt
 	padding: 2px 20px 2px 20px
 	line-height: 20px
+	vertical-align: top
 
 
 .with-icon
@@ -107,6 +107,7 @@ div.kazah
 
 .with-icon.left-in
 	padding-left: 20px
+	margin-left: -50px
 	float: left
 .with-icon.right-in
 	padding-right: 20px
@@ -118,10 +119,12 @@ div.kazah
 		margin-right: 30px
 	.middle
 		span.number-code, span.number
-			font-size: 25pt
+			font-size: 40px
+			line-height: 40px
 			font-family: OpenSans-BoldItalic
 		span.number-code
 			color: #5e6989
+			margin-left: 40px
 		#order-call, span.number-code, span.number
 			display: inline
 		#search
@@ -131,12 +134,11 @@ div.kazah
 			height: 16px
 		#search-head
 			position: relative
-			padding-right: 30px
-			margin-top: 15px
+			padding-right: 10px
+			margin-top: 13px
 			padding-bottom: 3px
-		#order-call
-			margin-bottom: 5px
-			margin-right: 25px
+		#callback_request
+			margin-top: 5px
 		.typeahead.dropdown-menu
 			width: 432px !important
 			margin-top: 15px
@@ -167,20 +169,23 @@ div.kazah
 					border-bottom-width: 0px
 	.right
 		float: right
-		width: 220px
-		text-align: right
+		width: 170px
+		text-align: left
 		position: relative
 		i.basket
 			background: url(../images/icons.png) -75px -3px no-repeat
 			display: inline-block
 			width: 45px
-			height: 45px
+			height: 40px
 			float: left
-			margin: 5px
-			position: absolute
-			left: 0
+			margin-top: 5px
+			margin-left: -55px
 		p
-			margin: 5px
+			margin: 0px
+		a.mini
+			display: block
+			font-size: 11px
+
 .bottom-menu-container, .footer-top
 	height: 45px
 	line-height: 45px
@@ -212,15 +217,19 @@ li
 		text-align: left
 		padding: 30px
 		left: -168px
+		width: 774px
 		border-color: #dbdfeb
 		h4
-			font-size: 12pt
+			font-size: 16px
+			font-weight: bold
+			color: #424343
 table#dropdown-table
 	td
-		min-width: 185px
+		padding-right: 40px
 		a
-			font-family: 'verdana'
-			font-size: 11pt
+			font-family: Verdana
+			font-size: 13px
+			line-height: 22px
 			font-weight: lighter
 			color: #0083df
 a.reg

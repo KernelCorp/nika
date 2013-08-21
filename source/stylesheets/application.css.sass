@@ -9,7 +9,7 @@ body, html
 	margin: 0 auto
 	min-height: 900px
 	margin-bottom: -330px
-	padding-top: 200px
+	padding-top: 180px
 	padding-bottom: 340px
 .content.after
 	display: block
@@ -31,8 +31,9 @@ body, html
 		box-shadow: inset 0 0 8px #4b5674, 0 2px 5px #aaa
 		color: #fff
 		display: inline-block
-		font-family: OpenSans-semibold
-		font-weight: bold
+		font-family: OpenSans-bold
+		font-size: 15px
+		font-weight: normal
 		text-shadow: none
 		text-transform: uppercase
 		height: 30px
@@ -106,18 +107,24 @@ a:visited
 h1, h2, h3
 	color: #d400b6
 	font-family: OpenSans-semibold
+	font-weight: normal
+	margin: 35px 0 10px
 h1
 	font-size: 25px
+	line-height: 26px
 h2
 	font-size: 19px
+	line-height: 20px
 h3
 	font-family: OpenSans-Bold
 	font-size: 14px
+	line-height: 15px
 
 ul.list
 	margin: 15px 0
 	li
 		list-style-type: none
+		margin-bottom: 15px
 	li:before
 		background-color: #606b8b
 		content: ' '
@@ -167,10 +174,10 @@ ul.list
 		width: 16px
 		height: 16px
 
-		-o-transition: all 0.5s linear 0
-		-moz-transition: all 0.5s linear 0
-		-webkit-transition: all 0.5s linear 0
-		transition: all 0.5s linear 0
+		-o-transition: all 0.5s linear 0s
+		-moz-transition: all 0.5s linear 0s
+		-webkit-transition: all 0.5s linear 0s
+		transition: all 0.5s linear 0s
 
 		.color-example
 			position: relative
@@ -178,7 +185,10 @@ ul.list
 			height: 16px
 			border-radius: 16px
 
-			transition: all 0.5s linear 0
+			-o-transition: all 0.5s linear 0s
+			-moz-transition: all 0.5s linear 0s
+			-webkit-transition: all 0.5s linear 0s
+			transition: all 0.5s linear 0s
 			transition-property: width, height, border-radius
 
 	.color:hover

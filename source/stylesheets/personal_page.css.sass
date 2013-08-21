@@ -17,11 +17,13 @@
 		width: 100%
 		height: 100%
 		td
+			width: 380px
 			height: 70px
-			padding-right: 35px
+			padding-right: 40px
+			padding-left: 50px
 		tr td:first-child
-			padding-left: 35px
-			width: 422px
+			padding-left: 40px
+			padding-right: 0px
 		.field-title
 			text-indent: 5px
 			color: #4e4f4f
@@ -32,7 +34,6 @@
 		.d-field
 			text-indent: 10px
 			width: 351px
-			height: 20px
 		.send-submit
 			margin-top: 20px
 			height: 30px
@@ -161,27 +162,36 @@ i.page
 	.q-body
 		margin-top: 15px
 		color: #7d7d7d
-	a.attach
+	label.attach
 		position: relative
 		display: inline-block
-		padding-right: 20px
 		margin-right: 20px
+		color: #0083df
+
+	label.attach:hover
+		text-decoration: underline
 
 	i.attach
+		display: inline-block
 		background: url(../images/personal-icons.png) 0px -3px no-repeat
 		height: 15px
 		width: 13px
 		right: 0px
 		top: 3px
-		position: absolute
+
+	input#attach_file[value='']
+		opacity: 1
+	input#attach_file[value*='.']
+		opacity: 1
 
 
 	textarea.question-text
-		width: 759px
-		height: 130px
-		resize: none
+		resize: vertical
 	#submit-question
 		float: right
 	background-color: #f3f3f3
 	border-radius: 5px
 	padding: 20px 34px 20px 34px
+
+.l-questions
+	margin-top: 30px

@@ -16,8 +16,8 @@
 
 .bx-wrapper {
 	position: relative;
-	margin: 0 auto 20px;
-	padding: 0;
+	margin-bottom: 20px;
+	padding: 5px 0;
 	*zoom: 1;
 }
 
@@ -33,6 +33,11 @@
 .bx-wrapper .bx-viewport {
 	position: relative;
 	vertical-align: middle;
+}
+
+.bx-wrapper .bx-viewport ul li a{
+	padding: 0;
+	margin: 0;
 }
 
 /*
@@ -120,6 +125,7 @@
 {
 	position: relative;
 	margin-top: -40px;
+	margin-bottom: 40px;
 	text-align: center;
 }
 

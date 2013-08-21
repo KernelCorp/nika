@@ -1,15 +1,20 @@
 .left-product-column
 	%ul#bx-product-gallery
 		%li
-			%img{:src => 'images/main-gallery/stock/cabinet.jpg'}
+			%a.next-slider{:href => '#'}
+				%img{:src => 'images/main-gallery/stock/cabinet.jpg'}
 		%li
-			%img{:src => 'images/main-gallery/stock/bedroom.jpg'}
+			%a.next-slider{:href => '#'}
+				%img{:src => 'images/main-gallery/stock/bedroom.jpg'}
 		%li
-			%img{:src => 'images/main-gallery/stock/wall.jpg'}
+			%a.next-slider{:href => '#'}
+				%img{:src => 'images/main-gallery/stock/wall.jpg'}
 		%li
-			%img{:src => 'images/main-gallery/stock/cabinet.jpg'}
+			%a.next-slider{:href => '#'}
+				%img{:src => 'images/main-gallery/stock/cabinet.jpg'}
 		%li
-			%img{:src => 'images/main-gallery/stock/wall.jpg'}
+			%a.next-slider{:href => '#'}
+				%img{:src => 'images/main-gallery/stock/wall.jpg'}
 
 	#bx-product-gallery-control
 		%a{:href => '#', 'data-slide-index' => 0}
@@ -248,8 +253,9 @@
 :javascript
 	$(document).ready(function(){
 		$('#bx-product-gallery').bxSlider({
-			controls: false,
+			controls: true,
 			adaptiveHeight: false,
-			pagerCustom: '#bx-product-gallery-control'
+			pagerCustom: '#bx-product-gallery-control',
+			nextSelector: '.next-slider'
 		});
 	});
