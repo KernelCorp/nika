@@ -162,14 +162,14 @@ i.page
 	.q-body
 		margin-top: 15px
 		color: #7d7d7d
-	a.attach
+	label.attach
 		position: relative
 		display: inline-block
 		margin-right: 20px
 		color: #0083df
 		padding-right: 20px
 
-	a.attach:hover
+	label.attach:hover
 		text-decoration: underline
 
 	i.attach
@@ -180,10 +180,8 @@ i.page
 		right: 0px
 		top: 3px
 
-	input#attach_file[value='']
-		opacity: 1
-	input#attach_file[value*='.']
-		opacity: 1
+	input#attach_file
+		display: none
 
 
 	textarea.question-text

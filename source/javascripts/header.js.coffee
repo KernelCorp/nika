@@ -28,4 +28,14 @@ $(document).ready () ->
 	$(document).click  () ->
 		setTimeout(make_corners, 200)
 	$('.dropdown-toggle').dropdown()
+
+	if $.browser.mozilla && $.browser.mozilla.version <= '4.0'
+		$('label[for=attach_file]').on('click', (e) ->
+			$('#attach_file').click()
+			return
+		)
+	$('#attach_file').on('change', (e) ->
+		$(this).css('display', 'inline-block')
+		return
+	)
 	return
