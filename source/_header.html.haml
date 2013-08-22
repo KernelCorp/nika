@@ -31,9 +31,14 @@
 				%p
 					%a{ :href=> '#'}
 						В корзине
-					3 товара
+					%b
+						3
+					товара
 					%br
-					на сумму 210 000 р.
+					на сумму
+					%b
+						210 000
+					р.
 				.not-signed-in
 					%a.reg{:href => '#'}
 						регистрация на сайте
@@ -45,7 +50,7 @@
 				.signed-in
 					%a.with-icon.left-in{:href => '#'}
 						%i.man
-						Иван иванов
+						Иван Иванов
 					%a.with-icon.right-in{:href => '#'}
 						Выход
 						%i.exit
