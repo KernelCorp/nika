@@ -1,11 +1,14 @@
 .top-gallery
 	width: 1080px
-	height: 410px
+	height: 384px
 	margin: 5px auto
+	margin-top: -10px
+	margin-bottom: 20px
 
 
 
 .top-gallery .bx-wrapper
+	padding-top: 0
 	.bx-prev
 		left: -4px
 		background: url(../images/navigation.png) no-repeat 0 -60px
@@ -14,6 +17,9 @@
 		left: auto
 		right: -4px
 		background: url(../images/navigation.png) no-repeat -35px -60px
+
+	.bx-next, .bx-prev
+		top: 21px
 
 	.bx-prev:hover
 		left: -8px
@@ -32,9 +38,8 @@
 
 		.text-line
 			position: absolute
-			top: 135px
+			top: 148px
 			left: 0
-			padding-top: 15px
 			height: 75px
 			width: 100%
 			background-color: rgba(0,0,0, .39)
@@ -43,16 +48,16 @@
 			font-family: OpenSans-semiboldItalic
 			font-size: 50px
 			text-align: center
-			line-height: 50px
+			line-height: 70px
 
 		button
 			position: absolute
-			right: 180px
-			bottom: 50px
+			right: 182px
+			bottom: 72px
 
 			color: #fff
-			font-size: 18px
-			padding: 18px 24px
+			font-size: 17px
+			padding: 15px 24px
 			border: none
 			border-radius: 5px
 			background-color: #5f6a8a
@@ -60,6 +65,7 @@
 
 .main-middle-gallery
 	.bx-wrapper
+		margin-bottom: -13px
 		.bx-controls-direction a
 			margin-top: -90px
 
