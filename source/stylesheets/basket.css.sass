@@ -33,6 +33,9 @@ i.icon-delete
 
 	.right
 		text-align: right
+		#confirm-order
+			margin-top: 17px
+			margin-right: -6px
 
 	table.basket_elem
 		border-collapse: collapse
@@ -40,7 +43,9 @@ i.icon-delete
 		box-shadow: 0 0 5px #444
 		font-family: Verdana
 		text-align: left
-		margin: 5px 0 15px
+		margin: 5px 0 18px 4px
+		padding-top: 2px
+		padding-left: 2px
 		width: 100%
 
 		.center
@@ -54,33 +59,55 @@ i.icon-delete
 			th
 				font-weight: normal
 				height: 28px
-				padding: 0 12px
+				padding: 0 10px
 				text-align: left
 
 		tbody
 
+
 			td
 				font-weight: bold
 				height: 86px
-				padding: 0 12px
+				padding: 0 10px
+			td:nth-child(1)
+				width: 78px
+			td:nth-child(2)
+				width: 210px
+			td:nth-child(3)
+				width: 56px
+			td:nth-child(4)
+				width: 89px
+			td:nth-child(5)
+				width: 84px
+			td:nth-child(6)
+				width: 76px
+				input
+					width: 51px
+					padding-left: 9px
+					margin-right: 9px
+					margin-left: 4px
+					height: 26px
+					font-family: verdana
+			td:nth-child(7)
+				width: 61px
 
-				img
-					max-height: 86px
-					max-width: 100px
+			img
+				max-height: 86px
+				max-width: 100px
 
-				.updown
-					display: inline-block
+			.updown
+				display: inline-block
 
-				.count
-					border: none
-					border-radius: 3px
-					box-shadow: 0 0 3px #444
-					margin: 0
-					vertical-align: bottom
-					width: 50px
+			.count
+				border: none
+				border-radius: 3px
+				box-shadow: 0 0 3px #444
+				margin: 0
+				vertical-align: bottom
+				width: 50px
 
 	.total
-		margin-top: 20px
+		margin-top: 8px
 		border-collapse: collapse
 		display: inline-table
 		font-family: Verdana
@@ -92,10 +119,10 @@ i.icon-delete
 			font-weight: bold
 		th
 			font-weight: normal
-			padding: 0 10px
+			padding: 0 6px
 		td
 			font-weight: bold
-			padding: 0 10px
+			padding: 0 6px
 
 		.t-weight
 			width: 68px

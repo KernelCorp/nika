@@ -43,7 +43,7 @@ $color-dark-blue: #2e3d66;
 			width: 21px;
 		}
 		&.cubes:after {
-			background-position: -22px 0;
+			background-position: -21px 0;
 			width: 22px;
 		}
 		&.list.active:after {
@@ -80,6 +80,7 @@ $color-dark-blue: #2e3d66;
 	}
 	.products {
 		margin: 27px auto;
+		margin-bottom: 10px;
 		width: 787px;
 		display: block;
 		padding-left: 4px;
