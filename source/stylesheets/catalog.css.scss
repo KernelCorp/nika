@@ -58,13 +58,17 @@ $color-dark-blue: #2e3d66;
 	.view {
 		background-color: $color-light-grey;
 		border-radius: 5px;
-		padding: 12px 30px 12px 20px;
+		padding: 3px 30px 7px 20px;
 		* {
 			display: inline;
 		}
 		p {
 			color: $color-black;
 			@include only-object;
+			margin-right: 4px;
+		}
+		a{
+			margin-right: 4px;
 		}
 		a {
 			&:last-child {
@@ -75,21 +79,22 @@ $color-dark-blue: #2e3d66;
 		}
 	}
 	.products {
-		margin: 30px auto;
-		width: 790px;
+		margin: 27px auto;
+		width: 787px;
 		display: block;
+		padding-left: 4px;
 		.product-by-block {
-			padding: 15px 12px;
+			padding: 10px 12px;
 			box-sizing: border-box;
 			-moz-box-sizing: border-box;
 			box-shadow: 0 0 10px #aaa;
-			width: 232px;
-			min-height: 244px;
+			width: 230px;
+			height: 266px;
 			background-color: $color-white;
 			border-radius: 5px;
 			display: inline-block;
 			margin-right: 41px;
-			margin-bottom: 30px;
+			margin-bottom: 27px;
 			&:nth-child(3n) {
 				margin-right: 0;
 			}
@@ -121,7 +126,7 @@ $color-dark-blue: #2e3d66;
 				}
 				div.wrap {
 					position: absolute;
-					left: -15px;
+					left: -14px;
 					width: 30px;
 					height: 100%;
 					div.left-div {
@@ -139,6 +144,8 @@ $color-dark-blue: #2e3d66;
 				*display: table-row;
 				border-spacing: 10px;
 				width: 100%;
+				text-align: right;
+				margin-top: 10px;
 				> * {
 					display: inline-block;
 					color: $color-dark-blue;
@@ -151,8 +158,10 @@ $color-dark-blue: #2e3d66;
 					padding-right: 2px;
 					position: relative;
 					top: -2px;
+					margin-right: 5px;
 					.information:before {
 						width: 32px;
+						line-height: 14px;
 					}
 					a.question {
 						&:hover {
