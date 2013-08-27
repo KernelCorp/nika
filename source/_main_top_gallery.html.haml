@@ -7,11 +7,13 @@
 				%legend
 					Обратный звонок
 				%label{:for => 'user_fio'}
-					ФИО<sup>*<sup>
+					ФИО
+					%sup *
 				%input{:id => 'user_fio', :type	=> 'text'}
 
 				%label{:for => 'phone'}
-					Телефон<sup>*<sup>
+					Телефон
+					%sup *
 				%input{:id => 'phone', :type	=> 'text'}
 
 				%label{:for => 'message'}
@@ -19,7 +21,7 @@
 				%textarea{:id => 'message'}
 				%input{:type => 'submit', :value => 'Заказать', :class => 'right'}
 
-%header.main
+.header.main
 	.header-content
 		.top-container
 			.left
