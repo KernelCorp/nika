@@ -12,11 +12,22 @@ html.lt-ie9
 	button,
 	form input[type=submit]
 		border: none
-		box-shadow: none
-		background:
-			image: none
-			color: #5b6685
-		behavior: url(stylesheets/border-radius.htc)
+		position: relative
+		span.ie-border-left
+			background: url(../images/ie-border-left-normal.png) no-repeat left top
+			position: absolute
+			width: 4px
+			height: 100%
+			left: -4px
+			top: 0
+
+		span.ie-border-right
+			background: url(../images/ie-border-right-normal.png) no-repeat right top
+			position: absolute
+			width: 4px
+			height: 100%
+			right: -4px
+			top: 0
 
 	.white_fon
 		background:
@@ -26,9 +37,35 @@ html.lt-ie9
 
 	.header
 		.header-content
+			.button,
+			button
+				border: none
+				position: relative
+				overflow: visible
+				padding-bottom: 6px
+				background: url(../images/ie-button-small.png) repeat-x left top
+				span.ie-border-left
+					background: url(../images/ie-border-left-small.png) no-repeat left top
+					position: absolute
+					width: 4px
+					height: 100%
+					left: -4px
+					top: 0
+
+				span.ie-border-right
+					background: url(../images/ie-border-right-small.png) no-repeat right top
+					position: absolute
+					width: 4px
+					height: 100%
+					right: -4px
+					top: 0
 			.header-menu
 				li
 					margin-right: 42px
+		.top-container
+			.middle
+				#search-head
+					padding: 3px 10px 3px
 		.top-gallery
 			.elem
 				.text-line
@@ -61,7 +98,7 @@ html.lt-ie9
 				span.ei-top-border
 					display: block
 					height: 3px
-					margin: -15px -15px 15px
+					margin: -15px -15px 10px
 					background:
 						color: transparent
 						image: url(../images/slideup_border_elem.png)
@@ -72,11 +109,48 @@ html.lt-ie9
 		div.kazah
 			margin-left: -44px
 
+	.container
+		.partners
+			.left
+				.download_area
+					background: url(../images/ie-left-download-area.png) repeat-x left top
+					border: none
+					position: relative
+					span.ie-border-left
+						background: url(../images/ie-border-left-long.png) no-repeat left top
+						position: absolute
+						width: 5px
+						height: 100%
+						left: -4px
+						top: 0
+
+					span.ie-border-right
+						background: url(../images/ie-border-right-long.png) no-repeat right top
+						position: absolute
+						width: 5px
+						height: 100%
+						right: -4px
+						top: 0
+
+
 html.lt-ie8
 	.header
+		.top-container
+			.middle
+				#search-head
+					padding: 3px 10px 0px
+					i.loupe
+						vertical-align: top
 		.top-gallery
 			margin-top: 10px
 
 		.slideup_info
 			.elem
 				float: left
+
+				span.ei-top-border
+					margin-bottom: -20px
+
+			.elem:hover
+				span.ei-top-border
+					margin-bottom: 15px
