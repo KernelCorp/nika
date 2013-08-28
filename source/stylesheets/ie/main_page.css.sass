@@ -8,6 +8,22 @@ html.lt-ie10
 				background-color: rgb(95, 106, 138)
 
 html.lt-ie9
+	.button,
+	button,
+	form input[type=submit]
+		border: none
+		box-shadow: none
+		background:
+			image: none
+			color: #5b6685
+		behavior: url(stylesheets/border-radius.htc)
+
+	.white_fon
+		background:
+			color: transparent
+			image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAATSURBVHjaYmBgYEgGAAAA//8DAABoAGS1Mt+CAAAAAElFTkSuQmCC')
+			repeat: repeat
+
 	.header
 		.header-content
 			.header-menu
@@ -17,6 +33,42 @@ html.lt-ie9
 			.elem
 				.text-line
 					background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAATSURBVHjaYmBgYEgGAAAA//8DAABoAGS1Mt+CAAAAAElFTkSuQmCC')
+			.bx-default-pager
+				.bx-pager-item
+					a.bx-pager-link
+						background:
+							color: transparent
+							image: url(../images/gallery-selector.png)
+							repeat:  no-repeat
+							position: center center
+					a.active,
+					a.bx-pager-link:hover
+						width: 13px
+						height: 13px
+						border: none
+						background:
+							color: transparent
+							image: url(../images/gallery-selector-active.png)
+							repeat:  no-repeat
+							position: center center
+
+		.slideup_info
+			.elem
+				border-top: none
+				background-color: rgb(95, 106, 138)
+				overflow: visible
+
+				span.ei-top-border
+					display: block
+					height: 3px
+					margin: -15px -15px 15px
+					background:
+						color: transparent
+						image: url(../images/slideup_border_elem.png)
+						repeat: no-repeat
+						position: center top
+
+
 		div.kazah
 			margin-left: -44px
 
@@ -24,3 +76,7 @@ html.lt-ie8
 	.header
 		.top-gallery
 			margin-top: 10px
+
+		.slideup_info
+			.elem
+				float: left
