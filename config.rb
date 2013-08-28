@@ -61,6 +61,7 @@ configure :build do
   ignore 'images/*.psd'
   ignore 'stylesheets/lib/*'
   ignore 'stylesheets/vendor/*'
+  ignore 'stylesheets/ie/*'
   ignore 'javascripts/lib/*'
   ignore 'javascripts/vendor/*'
 
