@@ -1,9 +1,10 @@
-!!! 5
-/[if lt IE 7]   <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en-us">
-/[if IE 7]      <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en-us">
-/[if IE 8]      <html class="no-js lt-ie10 lt-ie9" lang="en-us">
-/[if IE 9]      <html class="no-js lt-ie10 lt-ie9" lang="en-us">
-/[if lt IE 10]  <html class="no-js lt-ie10" lang="en-us">
+!!! 4
+/[if lt IE 7]   <html class="no-js lt-ie11 lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en-us">
+/[if IE 7]      <html class="no-js lt-ie11 lt-ie10 lt-ie9 lt-ie8" lang="en-us">
+/[if IE 8]      <html class="no-js lt-ie11 lt-ie10 lt-ie9" lang="en-us">
+/[if IE 9]      <html class="no-js lt-ie11 lt-ie10" lang="en-us">
+/[if IE 10]     <html class="no-js lt-ie11" lang="en-us">
+/[if gt IE 10]   <html class="no-js" lang="en-us">
 /[if !IE]>
 %html{lang: 'en', class: 'no-js'}
 	/<![endif]
@@ -39,6 +40,8 @@
 		-#%link{:rel => 'stylesheet', :type => 'text/css', :href => 'stylesheets/fonts.css'}
 		-#%link{:rel => 'stylesheet', :type => 'text/css', :href => 'stylesheets/left-column.css'}
 		%link{:rel => 'stylesheet', :type => 'text/css', :href => 'stylesheets/index.css'}
+
+		/[if IE] %link{:rel => 'stylesheet', :type => 'text/css', :href => 'stylesheets/IE.css'}
 
 		%script{:type => 'text/javascript', :src => 'javascripts/jquery.min.js'}
 		%script{:type => 'text/javascript', :src => 'javascripts/bootstrap.js'}
