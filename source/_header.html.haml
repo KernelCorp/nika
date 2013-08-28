@@ -58,8 +58,9 @@
 						%i.exit
 			.middle
 				%input{:type => 'button', :class => 'head-button button', :id=> 'callback_request', :value => 'Заказать звонок'}
-				%span{:class => 'number-code'} +7 (383)
-				%span{:class => 'number'} 25-10-100
+				.number-container
+					%span{:class => 'number-code'} +7 (383)
+					%span{:class => 'number'} 25-10-100
 				%br
 				%form#head-search
 					%input#search{:type => 'text', 'data-provide' => 'typeahead'}
