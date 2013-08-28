@@ -1,5 +1,5 @@
 html.lt-ie10
-	.header
+	.header.main
 		background-image: url(../images/big_main_fon.png)
 		background-position: left bottom
 		background-repeat: repeat-x
@@ -67,9 +67,19 @@ html.lt-ie9
 				#search-head
 					padding: 3px 10px 3px
 		.top-gallery
-			.elem
-				.text-line
-					background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAATSURBVHjaYmBgYEgGAAAA//8DAABoAGS1Mt+CAAAAAElFTkSuQmCC')
+			#bx-top-gallery
+				.elem
+					.text-line
+						background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAATSURBVHjaYmBgYEgGAAAA//8DAABoAGS1Mt+CAAAAAElFTkSuQmCC')
+
+					button
+						padding: 14px 24px 14px
+						overflow: visible
+						background: url(../images/ie-button-medium.png) repeat-x left top
+						span.ie-border-left
+							background: url(../images/ie-border-left-medium.png) no-repeat right top
+						span.ie-border-right
+							background: url(../images/ie-border-right-medium.png) no-repeat right top
 			.bx-default-pager
 				.bx-pager-item
 					a.bx-pager-link
@@ -95,7 +105,7 @@ html.lt-ie9
 				background-color: rgb(95, 106, 138)
 				overflow: visible
 
-				span.ei-top-border
+				span.ie-top-border
 					display: block
 					height: 3px
 					margin: -15px -15px 10px
@@ -143,14 +153,38 @@ html.lt-ie8
 						vertical-align: top
 		.top-gallery
 			margin-top: 10px
+			#bx-top-gallery
+				.elem
+					button
+						padding: 10px 24px 12px
 
 		.slideup_info
 			.elem
 				float: left
 
-				span.ei-top-border
+				span.ie-top-border
 					margin-bottom: -20px
 
 			.elem:hover
-				span.ei-top-border
+				span.ie-top-border
 					margin-bottom: 15px
+
+	.container
+		.partners
+			.left
+				zoom: 1
+				*display: inline
+			.right
+				zoom: 1
+				*display: inline
+		.left-block
+			zoom: 1
+			*display: inline
+		.right-block
+			zoom: 1
+			*display: inline
+
+			.main-middle-gallery
+				.bx-wrapper
+					margin-bottom: 50px
+
