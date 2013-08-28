@@ -3,18 +3,95 @@ html.lt-ie9
 		display: none !important
 	span.skype_pnh_print_container, span[class^="skype_pnh_print_container"]
 		display: inline !important
-html.lt-ie8
+html.lt-ie8, html.lt-ie9
 	span.skype_pnh_container
 		display: none !important
 	span.skype_pnh_print_container, span[class^="skype_pnh_print_container"]
 		display: inline !important
+	.content
+		padding-top: 0
 	.header
 		left: 0
-		.header-content
-			.top-container
-				.middle
+		overflow: visible
+		position: static
+	.content
+		.products
+			width: 830px
+			.product-by-block
+				width: 212px
+				float: left
+				margin-left: 20px
+				margin-right: 0
+				background: url('../images/block-border.png') no-repeat
+				.spanner
+					.price
+						line-height: 25px
+						overflow: visible
+						float: left
+						margin-left: 15px
+					.info
+						background: url('../images/info-icon.png') no-repeat
+						width: 15px
+						height: 15px
+						line-height: 15px
+						padding: 5px 10px 15px 7px
+						margin-right: 10px
+					.buy
+						margin-left: 5px
+				.left-div
+					.helper
+						display: inline-block
+						height: 100%
+						vertical-align: middle
+					img
+						vertical-align: center
+
+	.top-container
+		.middle
+			.number-container
+				width: 400px
+				position: absolute
+				top: 40px
+				padding-bottom: 3px
+			.head-search
+				position: relative
+				z-index: 9
+				.typeahead
 					position: relative
-					.number-container
-						position: absolute
-						top: 0
-						padding-bottom: 3px
+					z-index: 7
+html.lt-ie8
+	.right-container
+		float: right
+	.left-column
+		float: left
+	.content
+		padding-top: 0
+		.view
+			p.view-p
+				float: left
+			.cubes
+				position: relative
+				padding-right: 25px
+				float: left
+			.list
+				position: relative
+				padding-right: 25px
+				float: left
+			i.cubes-img, i.list-img
+				width: 21px
+
+				position: absolute
+				top: 0
+				right: -5px
+				margin-right: 5px
+				background-repeat: none
+				background-image: url('../../images/list-block.png')
+				width: 21px
+			i.list-img
+				height: 19px
+				background-position: -21px -21px
+			i.cubes-img
+				height: 21px
+				background-position: 0 0
+			a.show-all
+				float: right

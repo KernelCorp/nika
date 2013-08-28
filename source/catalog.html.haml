@@ -1,10 +1,14 @@
 %h1
 	Детская мебель
 %div.view
-	%p Вид:
-	%a.cubes.active{:href => "javascript:function(){ return false;}"} Плиткой
-	%a.list{:href => "javascript:function(){ return false;}"} Списком
-	%a{:href => "javascript:function(){ return false;}"} Показать все
+	%p.view-p Вид:
+	%a.cubes.active{:href => "javascript:function(){ return false;}"}
+		Плиткой
+		%i.cubes-img
+	%a.list{:href => "javascript:function(){ return false;}"}
+		Списком
+		%i.list-img
+	%a.show-all{:href => "javascript:function(){ return false;}"} Показать все
 %div.products
 	- 1.upto(6).each do |i|
 		%div.product-by-block
@@ -17,6 +21,7 @@
 				// it's for centring image
 				%div.wrap
 					%div.left-div
+						%span.helper
 						- if i == 6 || i == 2
 							%img{:src => "images/action.png"}
 						- if i == 1 || i == 5
