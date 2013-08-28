@@ -1,5 +1,5 @@
 html.lt-ie10
-	.header
+	.header.main
 		background-image: url(../images/big_main_fon.png)
 		background-position: left bottom
 		background-repeat: repeat-x
@@ -8,19 +8,183 @@ html.lt-ie10
 				background-color: rgb(95, 106, 138)
 
 html.lt-ie9
+	.button,
+	button,
+	form input[type=submit]
+		border: none
+		position: relative
+		span.ie-border-left
+			background: url(../images/ie-border-left-normal.png) no-repeat left top
+			position: absolute
+			width: 4px
+			height: 100%
+			left: -4px
+			top: 0
+
+		span.ie-border-right
+			background: url(../images/ie-border-right-normal.png) no-repeat right top
+			position: absolute
+			width: 4px
+			height: 100%
+			right: -4px
+			top: 0
+
+	.white_fon
+		background:
+			color: transparent
+			image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAATSURBVHjaYmBgYEgGAAAA//8DAABoAGS1Mt+CAAAAAElFTkSuQmCC')
+			repeat: repeat
+
 	.header
 		.header-content
+			.button,
+			button
+				border: none
+				position: relative
+				overflow: visible
+				padding-bottom: 6px
+				background: url(../images/ie-button-small.png) repeat-x left top
+				span.ie-border-left
+					background: url(../images/ie-border-left-small.png) no-repeat left top
+					position: absolute
+					width: 4px
+					height: 100%
+					left: -4px
+					top: 0
+
+				span.ie-border-right
+					background: url(../images/ie-border-right-small.png) no-repeat right top
+					position: absolute
+					width: 4px
+					height: 100%
+					right: -4px
+					top: 0
 			.header-menu
 				li
 					margin-right: 42px
+		.top-container
+			.middle
+				#search-head
+					padding: 3px 10px 3px
 		.top-gallery
+			#bx-top-gallery
+				.elem
+					.text-line
+						background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAATSURBVHjaYmBgYEgGAAAA//8DAABoAGS1Mt+CAAAAAElFTkSuQmCC')
+
+					button
+						padding: 14px 24px 14px
+						overflow: visible
+						background: url(../images/ie-button-medium.png) repeat-x left top
+						span.ie-border-left
+							background: url(../images/ie-border-left-medium.png) no-repeat right top
+						span.ie-border-right
+							background: url(../images/ie-border-right-medium.png) no-repeat right top
+			.bx-default-pager
+				.bx-pager-item
+					a.bx-pager-link
+						background:
+							color: transparent
+							image: url(../images/gallery-selector.png)
+							repeat:  no-repeat
+							position: center center
+					a.active,
+					a.bx-pager-link:hover
+						width: 13px
+						height: 13px
+						border: none
+						background:
+							color: transparent
+							image: url(../images/gallery-selector-active.png)
+							repeat:  no-repeat
+							position: center center
+
+		.slideup_info
 			.elem
-				.text-line
-					background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAATSURBVHjaYmBgYEgGAAAA//8DAABoAGS1Mt+CAAAAAElFTkSuQmCC')
+				border-top: none
+				background-color: rgb(95, 106, 138)
+				overflow: visible
+
+				span.ie-top-border
+					display: block
+					height: 3px
+					margin: -15px -15px 10px
+					background:
+						color: transparent
+						image: url(../images/slideup_border_elem.png)
+						repeat: no-repeat
+						position: center top
+
+
 		div.kazah
 			margin-left: -44px
 
+	.container
+		.partners
+			.left
+				.download_area
+					background: url(../images/ie-left-download-area.png) repeat-x left top
+					border: none
+					position: relative
+					span.ie-border-left
+						background: url(../images/ie-border-left-long.png) no-repeat left top
+						position: absolute
+						width: 5px
+						height: 100%
+						left: -4px
+						top: 0
+
+					span.ie-border-right
+						background: url(../images/ie-border-right-long.png) no-repeat right top
+						position: absolute
+						width: 5px
+						height: 100%
+						right: -4px
+						top: 0
+
+
 html.lt-ie8
 	.header
+		.top-container
+			.middle
+				#search-head
+					padding: 3px 10px 0px
+					i.loupe
+						vertical-align: top
 		.top-gallery
 			margin-top: 10px
+			#bx-top-gallery
+				.elem
+					button
+						padding: 10px 24px 12px
+
+		.slideup_info
+			.elem
+				float: left
+
+				span.ie-top-border
+					margin-bottom: -20px
+
+			.elem:hover
+				span.ie-top-border
+					margin-bottom: 15px
+
+	.container
+		.partners
+			.left
+				zoom: 1
+				*display: inline
+			.right
+				zoom: 1
+				*display: inline
+		.left-block
+			zoom: 1
+			*display: inline
+		.right-block
+			zoom: 1
+			*display: inline
+
+			.main-middle-gallery
+				.bx-wrapper
+					margin-bottom: 50px
+

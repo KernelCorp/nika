@@ -19,7 +19,10 @@
 				%label{:for => 'message'}
 					Комментарий
 				%textarea{:id => 'message'}
-				%input{:type => 'submit', :value => 'Заказать', :class => 'right'}
+				%button{:type => 'submit', :class => 'right'}
+					%span.ie-border-left
+					Заказать
+					%span.ie-border-right
 
 .header.main
 	.header-content
@@ -43,15 +46,20 @@
 					%i.right-arrow
 
 			.middle
-				%input{:type => 'button', :class => 'head-button button', :id=> 'callback_request', :value => 'Заказать звонок'}
+				%button{:class => 'head-button button', :id=> 'callback_request'}
+					%span.ie-border-left
+					Заказать звонок
+					%span.ie-border-right
 				%span{:class => 'number-code'} +7 (383)
 				%span{:class => 'number'} 25-10-100
 				%br
 				%form#head-search
 					%input#search{:type => 'text', 'data-provide' => 'typeahead'}
 					%button{:type => 'submit', :class => 'head-button button', :id=> 'search-head'}
+						%span.ie-border-left
 						Найти
 						%i.loupe.head-loupe
+						%span.ie-border-right
 		.bottom-menu-container
 			%ul.header-menu
 				%li
@@ -166,7 +174,9 @@
 						Оптовые поставки мебели
 					.button
 						%button
+							%span.ie-border-left
 							Партнерская программа
+							%span.ie-border-right
 
 			%li
 				.elem
@@ -175,7 +185,9 @@
 						Быстро, качественно
 					.button
 						%button
+							%span.ie-border-left
 							Партнерская программа
+							%span.ie-border-right
 
 			%li
 				.elem
@@ -184,11 +196,14 @@
 						Надежно
 					.button
 						%button
+							%span.ie-border-left
 							Партнерская программа
+							%span.ie-border-right
 
 
 	.slideup_info
 		.elem
+			%span.ie-top-border
 			%img{ :src => 'images/delivery.jpg', :class => 'img_before'}
 			%span.h3
 				Низкие цены
@@ -196,6 +211,7 @@
 				У нас есть служба доставки и поэтому мы поставляем быстро!
 
 		.elem
+			%span.ie-top-border
 			%img{ :src => 'images/delivery.jpg', :class => 'img_before'}
 			%span.h3
 				Складская программа
@@ -203,6 +219,7 @@
 				У нас есть служба доставки и поэтому мы поставляем быстро!
 
 		.elem
+			%span.ie-top-border
 			%img{ :src => 'images/delivery.jpg', :class => 'img_before'}
 			%span.h3
 				Доставка
@@ -210,6 +227,7 @@
 				У нас есть служба доставки и поэтому мы поставляем быстро!
 
 		.elem
+			%span.ie-top-border
 			%img{ :src => 'images/delivery.jpg', :class => 'img_before'}
 			%span.h3
 				Рекламные материалы
@@ -217,6 +235,7 @@
 				У нас есть служба доставки и поэтому мы поставляем быстро!
 
 		.elem
+			%span.ie-top-border
 			%img{ :src => 'images/delivery.jpg', :class => 'img_before'}
 			%span.h3
 				Консультации персонала
