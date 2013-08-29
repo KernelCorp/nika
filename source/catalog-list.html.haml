@@ -25,6 +25,7 @@
 				// it's for centring image
 				%div.wrap
 					%div.left-div
+						%span.helper
 						- if i == 6 || i == 2
 							%img{:src => "images/hit.png"}
 						- if i == 1 || i == 5
@@ -43,7 +44,7 @@
 							Для того, чтобы увидеть оптовые цены вам необходимо
 							%a{:href =>'#'}
 								зарегистрироваться
-				%a.buy.button{:href => "javascript:function(){ return false; }"}
+				%button.buy.button{:href => "javascript:function(){ return false; }"}
 					Купить
 					%span.ie-border-left
 					%span.ie-border-right
