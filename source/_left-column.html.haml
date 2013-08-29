@@ -11,9 +11,14 @@
 			.tab-content
 				.tab-pane.active#type#category
 					%form#left-search
-						%input#left-search{:type => 'text', :placeholder => 'Поиск'}
+						.custom-input
+							%span.left-border
+							%input#left-search{:type => 'text', :placeholder => 'Поиск'}
+							%span.right-border
 						%button.button#left-search
+							%span.ie-border-left
 							%i.loupe{:src => 'images/icons.png'}
+							%span.ie-border-right
 					.top-list
 						%h5
 							Корпусная мебель
