@@ -1,10 +1,14 @@
 %h1
 	Детская мебель
 %div.view
-	%p Вид:
-	%a.cubes{:href => "javascript:function(){ return false;}"} Плиткой
-	%a.active.list{:href => "javascript:function(){ return false;}"} Списком
-	%a{:href => "javascript:function(){ return false;}"} Показать все
+	%p.view-p Вид:
+	%a.cubes{:href => "javascript:function(){ return false;}"}
+		Плиткой
+		%i.cubes-img
+	%a.active.list{:href => "javascript:function(){ return false;}"}
+		Списком
+		%i.list-img
+	%a.show-all{:href => "javascript:function(){ return false;}"} Показать все
 %div.products
 	- 1.upto(6).each do |i|
 		.product-by-list
@@ -41,6 +45,8 @@
 								зарегистрироваться
 				%a.buy.button{:href => "javascript:function(){ return false; }"}
 					Купить
+					%span.ie-border-left
+					%span.ie-border-right
 	%div.paginator-wrapper
 		%ul.paginator
 			%li.quotes
