@@ -1,37 +1,63 @@
 .order_block
-	%h1
+	%span.h1
 		Регистрация
 
 	%form.form.narrow
 		.background
 			%label{:for => 'user_fio'}
 				контактное лицо:
-			%input{ :type => 'text', :id => 'user_fio'}
+			%span.input_wrapper
+				%span.ie-border-left
+				%input{ :type => 'text', :id => 'user_fio'}
+				%span.ie-border-right
 
-			%label{:for => 'user_fio'}
+			%label{:for => 'user_organization'}
 				наименование организации:
-			%input{ :type => 'text', :id => 'user_fio'}
+			%span.input_wrapper
+				%span.ie-border-left
+				%input{ :type => 'text', :id => 'user_organization'}
+				%span.ie-border-right
 
-			%label{:for => 'user_fio'}
+			%label{:for => 'user_phone'}
 				телефон:
-			%input{ :type => 'text', :id => 'user_fio'}
+			%span.input_wrapper
+				%span.ie-border-left
+				%input{ :type => 'text', :id => 'user_phone'}
+				%span.ie-border-right
 
-			%label{:for => 'user_fio'}
+			%label{:for => 'user_email'}
 				e-mail:
-			%input{ :type => 'text', :id => 'user_fio'}
+			%span.input_wrapper
+				%span.ie-border-left
+				%input{ :type => 'text', :id => 'user_email'}
+				%span.ie-border-right
 
-			%label{:for => 'user_fio'}
+			%label{:for => 'user_organization_address'}
 				адрес организации:
-			%input{ :type => 'text', :id => 'user_fio'}
+			%span.input_wrapper
+				%span.ie-border-left
+				%input{ :type => 'text', :id => 'user_organization_address'}
+				%span.ie-border-right
 
-			%label{:for => 'user_fio'}
+			%label{:for => 'user_delivery_address'}
 				адрес доставки:
-			%input{ :type => 'text', :id => 'user_fio'}
+			%span.input_wrapper
+				%span.ie-border-left
+				%input{ :type => 'text', :id => 'user_delivery_address'}
+				%span.ie-border-right
 
-			%label{:for => 'user_fio'}
+			%label{:for => 'user_comment'}
 				комментарий:
-			%textarea
+			%span.textarea_wrapper
+				%span.ie-border-left
+				%textarea{:id => 'user_comment'}
+				%span.ie-border-right
 
-		%input{:type => 'submit', :value => 'зарегестрироваться'}
+		%button{:type => 'submit', :class=> 'button'}
+			%span.ie-border-left
+			продолжить оформление
+			%span.ie-border-right
+
+
 
 
