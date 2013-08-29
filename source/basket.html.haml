@@ -1,51 +1,54 @@
 %script{:type => 'text/javascript', :src => 'javascripts/basket.js'}
 .basket
-	%h1
+	%span.h1
 		Корзина
 	%form.form
 		-1.upto(4).each do |i|
-			%table.basket_elem
-				%thead
-					%tr
-						%th.center
-							фото
-						%th
-							название:
-						%th
-							вес:
-						%th
-							объём:
-						%th
-							цена:
-						%th
-							кол-во:
-						%th.center
-							удалить
-				%tbody
-					%tr
-						%td.center
-							%img{:src => 'images/small/stock.jpg'}
-						%td
-							Детская "Глобус #{i}"
-						%td
-							%span.elem_weight
-								#{20 + i}
-							кг.
-						%td
-							%span.elem_volume
-								400#{i}
-							см<sup>3</sup>.
-						%td
-							%span.elem_cost
-								1#{i % 4} 000
-							р.
-						%td
-							%input{:type => 'text', :class => 'count', :value => '1'}
-							.updown
-								%i.icon-up-arrow
-								%i.icon-down-arrow
-						%td.center
-							%i.icon-delete
+			.basket_elem_wrapper
+				%span.ie-border-left
+				%table.basket_elem
+					%thead
+						%tr
+							%th.center
+								фото
+							%th
+								название:
+							%th
+								вес:
+							%th
+								объём:
+							%th
+								цена:
+							%th
+								кол-во:
+							%th.center
+								удалить
+					%tbody
+						%tr
+							%td.center
+								%img{:src => 'images/small/stock.jpg'}
+							%td
+								Детская "Глобус #{i}"
+							%td
+								%span.elem_weight
+									#{20 + i}
+								кг.
+							%td
+								%span.elem_volume
+									400#{i}
+								см<sup>3</sup>.
+							%td
+								%span.elem_cost
+									1#{i % 4} 000
+								р.
+							%td.count-td
+								%input{:type => 'text', :class => 'count', :value => '1'}
+								.updown
+									%i.icon-up-arrow
+									%i.icon-down-arrow
+							%td.center
+								%i.icon-delete
+				%span.ie-border-right
 
 
 		.right
@@ -77,4 +80,7 @@
 								32 000
 							р.
 
-			%input{:type => 'submit', :class => 'btn submit', :id => 'confirm-order', :value => 'оформить заказ'}
+			%button{:type => 'submit', :class => 'button', :id => 'confirm-order'}
+				%span.ie-border-left
+				оформить заказ
+				%span.ie-border-right

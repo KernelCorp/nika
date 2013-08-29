@@ -35,15 +35,19 @@ i.icon-delete
 		text-align: right
 		#confirm-order
 			margin-top: 17px
-			margin-right: -6px
+
+	.basket_elem_wrapper
+		border: 1px solid #e0e0e0
+		border-radius: 5px
+		box-shadow: 0 1px 5px #e0e0e0
+		overflow: hidden
+		margin: 5px 0 18px 4px
+		padding: 0
 
 	table.basket_elem
 		border-collapse: collapse
-		border-radius: 5px
-		box-shadow: 0 0 5px #444
 		font-family: Verdana
 		text-align: left
-		margin: 5px 0 18px 4px
 		padding-top: 2px
 		padding-left: 2px
 		width: 100%
@@ -102,6 +106,8 @@ i.icon-delete
 				border: none
 				border-radius: 3px
 				box-shadow: 0 0 3px #444
+				// IE 9 fix for table inner elements
+				border-collapse: separate
 				margin: 0
 				vertical-align: bottom
 				width: 50px

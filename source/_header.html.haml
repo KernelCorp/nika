@@ -19,7 +19,10 @@
 				%label{:for => 'message'}
 					Комментарий
 				%textarea{:id => 'message'}
-				%input{:type => 'submit', :value => 'Заказать', :class => 'right'}
+				%button{:type => 'submit', :class => 'button right'}
+					%span.ie-border-left
+					Заказать
+					%span.ie-border-right
 
 
 .header
@@ -57,9 +60,13 @@
 						Выход
 						%i.exit
 			.middle
+				%button{:class => 'head-button button', :id=> 'callback_request'}
 				%button{:type => 'button', :class => 'head-button button', :id=> 'callback_request'}
 					%span.ie-border-left
+					%span.ie-border-left
 					Заказать звонок
+					Заказать звонок
+					%span.ie-border-right
 					%span.ie-border-right
 				.number-container
 					%span{:class => 'number-code'} +7 (383)

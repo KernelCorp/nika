@@ -1,33 +1,36 @@
 .basket
-	%h1
+	%span.h1
 		Ваш заказ
 	%form.form
 		-1.upto(4) do |i|
-			%table.basket_elem
-				%thead
-					%tr
-						%th.center
-							фото
-						%th
-							название:
-						%th
-							артикул:
-						%th
-							цена:
-						%th.center
-							кол-во:
-				%tbody
-					%tr
-						%td.center
-							%img{:src => 'images/small/stock.jpg'}
-						%td
-							Детская "Глобус #{i}"
-						%td
-							67838495#{i}2
-						%td
-							32 #{i}00 р.
-						%td.center
-							1
+			.basket_elem_wrapper
+				%span.ie-border-left
+				%table.basket_elem
+					%thead
+						%tr
+							%th.center
+								фото
+							%th
+								название:
+							%th
+								артикул:
+							%th
+								цена:
+							%th.center
+								кол-во:
+					%tbody
+						%tr
+							%td.center
+								%img{:src => 'images/small/stock.jpg'}
+							%td
+								Детская "Глобус #{i}"
+							%td
+								67838495#{i}2
+							%td
+								32 #{i}00 р.
+							%td.center
+								1
+				%span.ie-border-right
 
 
 		.right
@@ -40,4 +43,8 @@
 					%tr
 						%td.center
 							128 000 р.
-			%input{:type => 'submit', :class => 'btn submit', :value => 'подтвердить заказ'}
+
+			%button{:type => 'submit', :class => 'button', :id => 'confirm-order'}
+				%span.ie-border-left
+				подтвердить заказ
+				%span.ie-border-right
