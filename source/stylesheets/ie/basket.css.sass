@@ -25,6 +25,9 @@ html.lt-ie9
 		.basket_elem
 			height: 122px
 
+			td.count-td
+				position: relative
+
 			.count
 				border: none
 				width: 57px
@@ -33,9 +36,9 @@ html.lt-ie9
 				background: url(../images/ie-basket-count-background.jpg) no-repeat 0 0
 
 			.updown
-				height: 21px
-				zoom: 1
-				*display: inline
+				position: absolute
+				right: 14px
+				top: 38px
 
 	.basket
 		.total
@@ -46,4 +49,17 @@ html.lt-ie9
 				padding-right: 10px
 
 
+
+html.lt-ie8
+	.basket_elem_wrapper
+		.basket_elem
+			.count
+				height: 21px
+	.basket
+		.right
+			.total
+				display: inline
+			.button
+				float: none
+				clear: both
 
