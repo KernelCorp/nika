@@ -22,7 +22,7 @@ update = () ->
 $(document).ready () ->
 	$('.icon-delete').on('click',(e) ->
 
-		$(e.target).parents('table').remove()
+		$(e.target).parents('.basket_elem_wrapper').first().remove()
 		update()
 		return
 	)
