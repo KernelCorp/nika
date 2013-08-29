@@ -23,89 +23,103 @@
 	слава артиста стала всенародной. Эффект "вау-вау" начинает музыкальный хамбакер,
 	это и есть одномоментная вертикаль в сверхмногоголосной полифонической ткани.
 
-%table.furniture_info
-	%tbody
-		%tr
-			%th
-				Производитель
-			%td
-				%a{:href => '#'}
-					“Фабрика мебели”, г. Бийск
-		%tr
-			%th
-				Артикул
-			%td
-				673849512
-		%tr
-			%th
-				Цвет
-			%td
-				.color{:style => 'background-color: #000', :title => 'Черный'}
-				.color{:style => 'background-color: #583931', :title => 'Каштан'}
-				.color{:style => 'background-color: #d6bea4', :title => 'Античный белый'}
-		%tr
-			%th
-				Ширина
-			%td
-				3000 мм.
+- 1.upto(2) do
+	%table.furniture_info
+		%tbody
+			%tr.odd
+				%th
+					Производитель
+				%td
+					%a{:href => '#'}
+						“Фабрика мебели”, г. Бийск
+			%tr
+				%th
+					Артикул
+				%td
+					673849512
+			%tr.odd
+				%th
+					Цвет
+				%td
+					.color
+						.info-block
+							%table
+								%tr
+									%th
+										Ножки:
+									%td
+										Бежевый
+								%tr
+									%th
+										Ручки:
+									%td
+										Бежевый
+								%tr
+									%th
+										Массив:
+									%td
+										Бежевый
+						%img{:src => 'images/colors/1-color.png'}
+					.color
+						.info-block
+							%table
+								%tr
+									%th
+										Ножки:
+									%td
+										Бежевый
+								%tr
+									%th
+										Ручки:
+									%td
+										Бежевый
+								%tr
+									%th
+										Массив:
+									%td
+										Бежевый
+						%img{:src => 'images/colors/2-color.png'}
+					.color
+						.info-block
+							%table
+								%tr
+									%th
+										Ножки:
+									%td
+										Бежевый
+								%tr
+									%th
+										Ручки:
+									%td
+										Бежевый
+								%tr
+									%th
+										Массив:
+									%td
+										Бежевый
+						%img{:src => 'images/colors/3-color.png'}
+			%tr
+				%th
+					Ширина
+				%td
+					3000 мм.
 
-		%tr
-			%th
-				Высота
-			%td
-				2000 мм.
-		%tr
-			%th
-				Глубина
-			%td
-				560 мм.
-		%tr
-			%th
-				Материал
-			%td
-				ЛДСП, ПВХ
+			%tr.odd
+				%th
+					Высота
+				%td
+					2000 мм.
+			%tr
+				%th
+					Глубина
+				%td
+					560 мм.
+			%tr.odd
+				%th
+					Материал
+				%td
+					ЛДСП, ПВХ
 
-%table.furniture_info
-	%tbody
-		%tr
-			%th
-				Производитель
-			%td
-				%a{:href => '#'}
-					“Фабрика мебели”, г. Бийск
-		%tr
-			%th
-				Артикул
-			%td
-				673849512
-		%tr
-			%th
-				Цвет
-			%td
-				.color{:style => 'background-color: #000', :title => 'Черный'}
-				.color{:style => 'background-color: #583931', :title => 'Каштан'}
-				.color{:style => 'background-color: #d6bea4', :title => 'Античный белый'}
-		%tr
-			%th
-				Ширина
-			%td
-				3000 мм.
-
-		%tr
-			%th
-				Высота
-			%td
-				2000 мм.
-		%tr
-			%th
-				Глубина
-			%td
-				560 мм.
-		%tr
-			%th
-				Материал
-			%td
-				ЛДСП, ПВХ
 
 
 %h3
