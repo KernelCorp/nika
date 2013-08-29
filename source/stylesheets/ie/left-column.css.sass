@@ -2,7 +2,6 @@ html.lt-ie8
 	#left-search
 		.custom-input
 			position: relative
-			z-index: 1000
 			display: inline
 			margin: 9px 8px 0 0
 			padding: 0 5px 0 5px
@@ -32,3 +31,41 @@ html.lt-ie8
 		margin: 10px 5px 0 0
 		width: 20px
 		height: 30px
+
+
+html.eq-ie8
+	#left-search
+		.custom-input
+			position: relative
+			display: inline-block
+			margin: 9px 8px 0 0
+			padding: 0 5px 0 5px
+			span.left-border
+				width: 5px
+				height: 30px
+				background: url(../images/input-border.png) 0 0 no-repeat
+				position: absolute
+				left: 1px
+				top: 0px
+			span.right-border
+				width: 5px
+				height: 30px
+				background: url(../images/input-border.png) -9px 0 no-repeat
+				position: absolute
+				right: 1px
+				top: 0px
+			input
+				z-index: -1
+				float: none
+				border-color: #e0e0e0
+				margin: 0
+				border-left: none
+				border-right: none
+				height: 20px
+				width: 110px
+				display: inline
+	button#left-search
+		margin: 10px 5px 0 0
+		width: 20px
+		height: 30px
+		overflow: visible
