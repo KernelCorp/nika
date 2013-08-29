@@ -78,6 +78,7 @@ div.kazah
 	padding-top: 5px
 	line-height: 18px
 	margin-left: 0
+	margin-top: 7px
 	a
 		vertical-align: top
 		font-family: OpenSans-semibold
@@ -86,12 +87,26 @@ div.kazah
 		vertical-align: top
 
 .signed-in
-	padding-top: 32px
+	margin-top: 30px
 	font-size: 13px
+	display: none
 
 .not-signed-in
-	display: none
+	//play: none
 	font-size: 13px
+	margin-top: 11px
+	a
+		position: relative
+		padding-right: 10px
+		i
+			position: absolute
+			right: -3px
+			top: 0
+		i.plus
+			top: -2px
+		i.right-arrow
+			top: 5px
+
 
 #search-head i.loupe.head-loupe
 	top: 3px
@@ -137,6 +152,8 @@ div.kazah
 			margin-left: 30px
 		#order-call, span.number-code, span.number
 			display: inline
+		.custom-input
+			display: inline-block
 		#search
 			width: 404px
 			margin: 11px 6px 0 -8px
@@ -215,6 +232,7 @@ div.kazah
 		font-family: 'OpenSans-semibold'
 		float: left
 		list-style-type: none
+		margin-top: 5px
 		margin-left: 0px
 		li
 			float: left
