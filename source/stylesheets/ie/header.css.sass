@@ -19,31 +19,16 @@ html.lt-ie8
 					margin-left: 6px
 				#head-search
 					.custom-input
-						position: relative
-						z-index: 4
-						display: inline
 						margin: 9px 16px 0 0
-						padding: 0 5px 0 5px
-						span.left-border
-							width: 5px
-							height: 30px
-							background: url(../images/input-border.png) 0 0 no-repeat
-							position: absolute
-							left: 1px
-							top: 0px
-						span.right-border
-							width: 5px
-							height: 30px
-							background: url(../images/input-border.png) -9px 0 no-repeat
-							position: absolute
-							right: 1px
-							top: 0px
+						display: inline
 						input
 							border-color: #e0e0e0
 							margin: 0
 							border-left: none
 							border-right: none
 							height: 19px
+					button#search-head
+						padding-bottom: 5px
 					.typeahead
 						margin: 0
 	.popover_block.user_callback
@@ -97,3 +82,23 @@ html.eq-ie8
 						margin: 0
 	.popover_block.user_callback
 		z-index: 2000
+html.lt-ie9
+	.custom-input
+		position: relative
+		z-index: 4
+		padding: 0 5px 0 5px
+		display: inline
+		span.left-border
+			width: 5px
+			height: 30px
+			background: url(../images/input-border.png) 0 0 no-repeat
+			position: absolute
+			left: 1px
+			top: 0px
+		span.right-border
+			width: 5px
+			height: 30px
+			background: url(../images/input-border.png) -9px 0 no-repeat
+			position: absolute
+			right: 1px
+			top: 0px
