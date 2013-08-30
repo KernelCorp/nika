@@ -80,8 +80,27 @@ i.page
 				width: 165px
 			th:nth-child(7)
 				width: 90px
-		tbody tr
-			border-radius: 3px
+		tbody
+			.l-count
+				display: none
+				text-align: right
+				color: #323746
+				margin-right: -10px
+			.decor-line
+				margin-top: -4px
+				width: 93px
+				height: 1px
+				border-bottom: 2px dotted #88c2ea
+			.l-items
+				display: none
+				border-left: 2px solid #e3e3e3
+				padding-left: 14px
+				margin-left: -15px
+			.l-sum
+				display: none
+				color: #323746
+			tr
+				border-radius: 3px
 			td
 				text-align: left
 			td:nth-child(1)
@@ -89,27 +108,12 @@ i.page
 			td:nth-child(2)
 				width: 105px
 			td:nth-child(3)
-				.decor-line
-					margin-top: -4px
-					width: 93px
-					height: 1px
-					border-bottom: 2px dotted #88c2ea
 				color: #0083df
 				text-align: left
 				width: 270px
-				.l-items
-					display: none
-					border-left: 2px solid #e3e3e3
-					padding-left: 14px
-					margin-left: -15px
 			td:nth-child(4)
 				width: 120px
 				color: #0083df
-				.l-count
-					display: none
-					text-align: right
-					color: #323746
-					margin-right: -10px
 			td:last-child
 				a
 					color: #5b6686
@@ -123,9 +127,6 @@ i.page
 				width: auto
 				padding-right: 20px
 				text-align: right
-				.l-sum
-					display: none
-					color: #323746
 			td:nth-child(6)
 				width: 165px
 			td:nth-child(7)

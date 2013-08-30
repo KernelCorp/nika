@@ -17,6 +17,7 @@
 				%img{:src => 'images/main-gallery/stock/wall.jpg'}
 
 	#bx-product-gallery-control
+		%span.ie-border-left
 		%a{:href => '#', 'data-slide-index' => 0}
 			%img{:src => 'images/main-gallery/stock/cabinet.jpg'}
 		%a{:href => '#', 'data-slide-index' => 1}
@@ -27,6 +28,7 @@
 			%img{:src => 'images/main-gallery/stock/cabinet.jpg'}
 		%a{:href => '#', 'data-slide-index' => 4}
 			%img{:src => 'images/main-gallery/stock/wall.jpg'}
+		%span.ie-border-right
 
 
 
@@ -194,9 +196,11 @@
 						Для того, чтобы увидеть оптовые цены вам необходимо
 						%a{:href =>'#'}
 							зарегистрироваться
-			%td
-				%button
+			%td.ie-td-buy
+				%button.button
+					%span.ie-border-left
 					Купить
+					%span.ie-border-right
 
 %p
 	Хорус, следовательно, полифигурно иллюстрирует звукорядный рок-н-ролл 50-х,
@@ -205,6 +209,7 @@
 	возникает как следствие их выстраивания на основе определенного ряда (модуса).
 
 .additional_block
+	%span.ie-border-left
 	%span.h5
 		Сопутствующие товары
 	.elem
@@ -219,14 +224,16 @@
 			Полка “ПН-6”
 		.price
 			2 600 p.
-	.elem
+	.elem.last
 		%img{:src => 'images/main-gallery/stock/wall.jpg'}
 		%a{:href =>'#'}
 			Полка “ПН-6”
 		.price
 			2 600 p.
+	%span.ie-border-right
 
 .additional_block
+	%span.ie-border-left
 	%span.h5
 		Похожие товары
 	.elem
@@ -241,12 +248,13 @@
 			Полка “ПН-6”
 		.price
 			2 600 p.
-	.elem
+	.elem.last
 		%img{:src => 'images/main-gallery/stock/wall.jpg'}
 		%a{:href =>'#'}
 			Полка “ПН-6”
 		.price
 			2 600 p.
+	%span.ie-border-right
 
 
 
