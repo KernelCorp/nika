@@ -49,18 +49,4 @@
 					%span.ie-border-left
 					%span.ie-border-right
 	%div.paginator-wrapper
-		%ul.paginator
-			%li.quotes
-				%a{:href => "javascript:function(){ return false; }"} &lt;&lt;
-			%li.quotes
-				%a{:href => "javascript:function(){ return false; }"} &lt;
-			%li
-				%a{:href => "javascript:function(){ return false; }"} 1
-			%li
-				%a{:href => "javascript:function(){ return false; }"} 2
-			%li
-				%a{:href => "javascript:function(){ return false; }"} 3
-			%li.quotes
-				%a{:href => "javascript:function(){ return false; }"} &gt;
-			%li.quotes
-				%a{:href => "javascript:function(){ return false; }"} &gt;&gt;
+		= partial 'pagination'

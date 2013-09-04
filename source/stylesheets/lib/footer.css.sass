@@ -1,6 +1,6 @@
 .footer
 	bottom: 0
-	height: 281px
+	height: 285px
 	width: 100%
 	min-width: 1079px
 	background-color: #4d566f
@@ -9,13 +9,9 @@
 	padding-top: 28px
 
 	.left-column
-		form#seft-search
+		form#left-search
 			input#left-search
 				width: 145px
-				margin-bottom: 0
-				margin-top: -5px
-			button#left-search
-				margin-bottom: 7px
 
 
 
@@ -42,11 +38,13 @@ i.up-arrow-blue
 table.big-list
 	font-family: 'Verdana'
 	margin-top: -10px
-	float: right
+	margin-left: 54px
+	display: inline-block
+	vertical-align: top
 	th
 		text-align: left
 		font-size: 13px
-		min-width: 176px
+		min-width: 178px
 	th:last-child
 		min-width: 90px
 	td
@@ -74,11 +72,13 @@ table.big-list
 			margin-right: 20px
 .footer-middle
 	.info-block
-		float: left
+		display: inline-block
+		vertical-align: top
 		font-family: 'Verdana'
 		font-size: 10pt
 		text-align: left
 		margin-top: -10px
+		width: 200px
 		p
 			display: inline
 		span.number
@@ -86,17 +86,25 @@ table.big-list
 		a
 			color: #ffffff
 			text-decoration: underline
+		.left-column
+			margin-top: -8px
 .footer-bottom
 	width: 100%
-	font-size: 9pt
+	font-size: 11px
+	position: relative
+	height: 45px
 	.left
 		padding-top: 24px
-		float: left
+		position: absolute
+		left: 0
+		bottom: 0
 		p
 			margin: 0
 	.right
 		padding-top: 24px
-		float: right
+		position: absolute
+		right: 0
+		bottom: 0
 		a
 			text-decoration: underline
 			color: #ffffff
