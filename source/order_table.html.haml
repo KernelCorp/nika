@@ -34,15 +34,33 @@
 
 
 		.right
-			%table.total.right-space
+			%table.total
 				%thead
 					%tr
-						%th.center
-							общая стоимость заказа:
+						%th.bold
+							Итоговые
+						%th.t-weight
+							вес:
+						%th.t-volume
+							объём:
+						%th.t-cost
+							стоимость:
 				%tbody
 					%tr
-						%td.center
-							128 000 р.
+						%td
+							&nbsp;
+						%td.t-weight
+							%span.total_weight
+								160
+							кг.
+						%td.t-volume
+							%span.total_volume
+								4002
+							см<sup>3</sup>.
+						%td.t-cost
+							%span.total_cost
+								32 000
+							р.
 
 			%button{:type => 'submit', :class => 'button', :id => 'confirm-order'}
 				%span.ie-border-left
