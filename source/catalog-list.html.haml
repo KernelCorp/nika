@@ -12,11 +12,13 @@
 %div.products
 	- 1.upto(6).each do |i|
 		.product-by-list
-			%h2 Детская "Глобус 2"
-			%p.marking
-				Артикул
-				%b
-					673849512
+			%a.title{:href => '#'}
+				%h2 Детская "Глобус 2"
+			%a{:href => '#'}
+				%p.marking
+					Артикул
+					%b
+						673849512
 			%div.description
 				В связи с этим нужно подчеркнуть,
 				что процесс вызывает смешанный эксикатор
@@ -27,10 +29,13 @@
 					%div.left-div
 						%span.helper
 						- if i == 6 || i == 2
-							%img{:src => "images/hit.png"}
+							%a{:href => '#'}
+								%img{:src => "images/hit.png"}
 						- if i == 1 || i == 5
-							%img{:src => "images/action.png"}
-				%img{:src => "images/stock.jpg"}
+							%a{:href => '#'}
+								%img{:src => "images/action.png"}
+				%a{:href => '#'}
+					%img{:src => "images/stock.jpg"}
 			%div.spanner
 				.price
 					10 500 p.

@@ -87,6 +87,18 @@ $color-dark-blue: #2e3d66;
 			margin-bottom: 17px;
 			text-align: center;
 			min-height: 142px;
+			a:hover {
+				h2, p {
+					text-decoration: underline;
+				}
+			}
+			a.title{
+				color: #000000;
+			}
+			a.title:hover
+			{
+				text-decoration: underline;
+			}
 			h2 {
 				font-family: Verdana, sans-serif;
 				font-size: 15px;
@@ -118,7 +130,7 @@ $color-dark-blue: #2e3d66;
 				left: 0;
 				width: 180px;
 				margin: 10px 0;
-				> img{
+				> a > img{
 					height: 103px;
 				}
 				div.wrap {

@@ -12,22 +12,27 @@
 %div.products
 	- 1.upto(6).each do |i|
 		%div.product-by-block
-			%h2 Детская "Глобус 2"
-			%p
-				Артикул
-				%b
-					673849512
+			%a.title{:href => '#'}
+				%h2
+					Детская "Глобус 2"
+			%a.art{:href => '#'}
+				%p
+					Артикул
+					%b
+						673849512
 			%div.image
 				// it's for centring image
 				%div.wrap
 					%div.left-div
 						%span.helper
 						- if i == 6 || i == 2
-							%img{:src => "images/action.png"}
+							%a{:href => '#'}
+								%img{:src => "images/action.png"}
 						- if i == 1 || i == 5
-							%img{:src => "images/hit.png"}
-
-				%img{:src => "images/stock.jpg"}
+							%a{:href => '#'}
+								%img{:src => "images/hit.png"}
+				%a{:href => '#'}
+					%img{:src => "images/stock.jpg"}
 			%div.spanner
 				%p.price #{rand(11) + 5} 500 p.
 				%i.icon-info

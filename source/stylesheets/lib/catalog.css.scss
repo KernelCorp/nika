@@ -96,6 +96,14 @@ $color-dark-blue: #2e3d66;
 			display: inline-block;
 			margin-right: 41px;
 			margin-bottom: 27px;
+			text-align: center;
+			a {
+				text-align: center;
+				display: inline-block;
+			}
+			a.title {
+				color: #000000;
+			}
 			&:nth-child(3n) {
 				margin-right: 0;
 			}
